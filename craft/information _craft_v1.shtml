@@ -1,0 +1,2552 @@
+<!-- dir_forms/information.shtml  -->
+
+<!--  4D Methods:  Web_Information_Init, Web_ConsentForm_Save -->
+<!--  Web_Search_Info_Parent1_Cities, Web_Search_Info_Parent2_Cities, Web_Search_Info_EmrgCnt1_Cities   -->
+<!--  Web_Search_InfoForm1_Contact, Web_Search_InfoForm1_Contact_v2  -->
+
+
+<!DOCTYPE html>
+<html>
+
+<!-- ¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥   HEAD   ¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥ -->
+
+<head>
+<meta charset="utf-8"><!-- dir_forms/information.shtml  -->
+
+<!--  4D Methods:  Web_Information_Init, Web_ConsentForm_Save -->
+<!--  Web_Search_Info_Parent1_Cities, Web_Search_Info_Parent2_Cities, Web_Search_Info_EmrgCnt1_Cities   -->
+<!--  Web_Search_InfoForm1_Contact, Web_Search_InfoForm1_Contact_v2  -->
+
+
+<!DOCTYPE html>
+<html>
+
+<!-- ¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥   HEAD   ¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥ -->
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Pragma" content="no-cache" />
+
+<!--4DSCRIPT/Web_Information_Init-->
+
+<link rel="stylesheet" href="../styles_new.css" type="text/css">
+<link rel="stylesheet" type="text/css" media="all" href="../javascript/jsDatePick_ltr.css" />
+<link rel="stylesheet" href="../styles_craft.css" type="text/css">
+<script type="text/javascript" src="../javascript/jsDatePick.full.1.3.js"></script>
+
+
+
+<style type="text/css">
+
+
+#toptitle
+{
+}
+
+
+.button {
+    background-color: white;
+    border: none;
+    color: blue;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: darkgreen;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#asciac1
+{
+display: none;
+}
+
+#requc1
+{
+display: none;
+}
+
+#asciac2
+{
+display: none;
+}
+
+#requc2
+{
+display: none;
+}
+
+#asciac3
+{
+display: none;
+}
+
+#requc3
+{
+display: none;
+}
+
+#asciac4
+{
+display: none;
+}
+
+#requc4
+{
+display: none;
+}
+
+#asciac5
+{
+display: none;
+}
+
+#requc5
+{
+display: none;
+}
+
+
+
+
+.samebutton
+{
+/*border: none;*/
+width: 20px;
+font-size: 10px;
+background-color: #e8f3f9 ;   /* Light Blue */
+padding: 4px 0px;
+text-align: center;
+border: #e7e7e7;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    }
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: gray transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+</style>
+
+
+
+
+
+<script type="text/javascript">
+window.onload = function(){
+		new JsDatePick({
+			useMode:2,
+			target:"dobC1",
+			dateFormat:"%d/%m/%Y",
+		});
+		new JsDatePick({
+			useMode:2,
+			target:"dobC2",
+			dateFormat:"%d/%m/%Y",
+		});
+		new JsDatePick({
+			useMode:2,
+			target:"dobC3",
+			dateFormat:"%d/%m/%Y",
+		});
+		new JsDatePick({
+			useMode:2,
+			target:"dobC4",
+			dateFormat:"%d/%m/%Y",
+		});
+		new JsDatePick({
+			useMode:2,
+			target:"dobC5",
+			dateFormat:"%d/%m/%Y",
+		});
+
+		Inits();
+	}
+
+
+//	Start
+function Inits ()
+{
+document.getElementById('legaldisclosure').style.display = "none";
+
+var parent = "1";
+myFunction(parent);
+mykidFunction(parent);
+}
+// End
+
+//	Start
+function disableSubmit() {
+  document.getElementById("submit").disabled = true;
+ }
+// End
+
+
+//	Start
+function activateButton(element) {
+
+      if(element.checked) {
+        document.getElementById("submit").disabled = false;
+       }
+
+       else  {
+        document.getElementById("submit").disabled = true;
+      }
+}
+// End
+
+
+//	Start
+function unhide(spanID) {
+    var x = document.getElementById('label1');
+    if (x.style.display === 'none') {
+        x.style.display = 'hide';
+    } else {
+        x.style.display = 'show';
+    }
+}
+// End
+
+
+//	Start
+/* do not need the radio ,fixed to 2 contact detail.03212018
+function myFunction(value)
+{
+
+if (value == "1")
+{
+document.getElementById('Parent2').style.display = "none";
+}
+
+if (value == "2")
+{
+document.getElementById('Parent2').style.display = "inline";
+}
+}
+// End
+*/
+
+
+//	Start
+function mykidFunction(value)
+{
+
+if (value == "1")
+{
+document.getElementById('child2').style.display = "none";
+document.getElementById('child3').style.display = "none";
+document.getElementById('child4').style.display = "none";
+document.getElementById('child5').style.display = "none";
+}
+if (value == "2")
+{
+document.getElementById('child2').style.display = "inline";
+document.getElementById('child3').style.display = "none";
+document.getElementById('child4').style.display = "none";
+document.getElementById('child5').style.display = "none";
+}
+
+if (value == "3")
+{
+document.getElementById('child2').style.display = "inline";
+document.getElementById('child3').style.display = "inline";
+document.getElementById('child4').style.display = "none";
+document.getElementById('child5').style.display = "none";
+}
+
+if (value == "4")
+{
+document.getElementById('child2').style.display = "inline";
+document.getElementById('child3').style.display = "inline";
+document.getElementById('child4').style.display = "inline";
+document.getElementById('child5').style.display = "none";
+}
+
+if (value == "5")
+{
+document.getElementById('child2').style.display = "inline";
+document.getElementById('child3').style.display = "inline";
+document.getElementById('child4').style.display = "inline";
+document.getElementById('child5').style.display = "inline";
+}
+}
+// End
+
+
+
+//	Start
+function showlegal(value) {
+if(value=="Show More")
+{
+document.getElementById('legaldisclosure').style.display = "inline";
+document.getElementById('legalbut').value = "Show Less";
+}
+
+if(value=="Show Less")
+{
+document.getElementById('legaldisclosure').style.display = "none";
+document.getElementById('legalbut').value = "Show More";
+}
+}
+// End
+
+
+//  ==========================  Start    SAME  buttons   ===================================
+
+
+//  --------------------  Start   Same Address buttons   ---------------------------------------------
+
+function copyP1addressP2 () {
+	document.myform.homeaddressP2.value = document.myform.homeaddressP1.value;
+	document.myform.suburbP2.value = document.myform.suburbP1.value;
+	document.myform.postalP2.value = document.myform.postalP1.value;
+	document.myform.StateP2.value = document.myform.StateP1.value;
+	document.myform.LGAP2.value = document.myform.LGAP1.value;
+}
+
+
+function copyP1addressC1 () {
+	document.myform.homeaddressC1.value = document.myform.homeaddressP1.value;
+	document.myform.suburbC1.value = document.myform.suburbP1.value;
+	document.myform.postalcodeC1.value = document.myform.postalP1.value;
+	document.myform.StateC1.value = document.myform.StateP1.value;
+	document.myform.LGAC1.value = document.myform.LGAP1.value;
+}
+
+function copyP2addressC1 () {
+	document.myform.homeaddressC1.value = document.myform.homeaddressP2.value;
+	document.myform.suburbC1.value = document.myform.suburbP2.value;
+	document.myform.postalcodeC1.value = document.myform.postalP2.value;
+	document.myform.StateC1.value = document.myform.StateP2.value;
+	document.myform.LGAC1.value = document.myform.LGAP2.value;
+}
+
+
+function copyP1addressC2 () {
+	document.myform.homeaddressC2.value = document.myform.homeaddressP1.value;
+	document.myform.suburbC2.value = document.myform.suburbP1.value;
+	document.myform.postalcodeC2.value = document.myform.postalP1.value;
+	document.myform.StateC2.value = document.myform.StateP1.value;
+	document.myform.LGAC2.value = document.myform.LGAP1.value;
+}
+
+function copyP2addressC2 () {
+	document.myform.homeaddressC2.value = document.myform.homeaddressP2.value;
+	document.myform.suburbC2.value = document.myform.suburbP2.value;
+	document.myform.postalcodeC2.value = document.myform.postalP2.value;
+	document.myform.StateC2.value = document.myform.StateP2.value;
+	document.myform.LGAC2.value = document.myform.LGAP2.value;
+}
+
+
+function copyP1addressC3 () {
+	document.myform.homeaddressC3.value = document.myform.homeaddressP1.value;
+	document.myform.suburbC3.value = document.myform.suburbP1.value;
+	document.myform.postalcodeC3.value = document.myform.postalP1.value;
+	document.myform.StateC3.value = document.myform.StateP1.value;
+	document.myform.LGAC3.value = document.myform.LGAP1.value;
+}
+
+function copyP2addressC3 () {
+	document.myform.homeaddressC3.value = document.myform.homeaddressP2.value;
+	document.myform.suburbC3.value = document.myform.suburbP2.value;
+	document.myform.postalcodeC3.value = document.myform.postalP2.value;
+	document.myform.StateC3.value = document.myform.StateP2.value;
+	document.myform.LGAC3.value = document.myform.LGAP2.value;
+}
+
+
+function copyP1addressC4 () {
+	document.myform.homeaddressC4.value = document.myform.homeaddressP1.value;
+	document.myform.suburbC4.value = document.myform.suburbP1.value;
+	document.myform.postalcodeC4.value = document.myform.postalP1.value;
+	document.myform.StateC4.value = document.myform.StateP1.value;
+	document.myform.LGAC4.value = document.myform.LGAP1.value;
+}
+
+function copyP2addressC4 () {
+	document.myform.homeaddressC4.value = document.myform.homeaddressP2.value;
+	document.myform.suburbC4.value = document.myform.suburbP2.value;
+	document.myform.postalcodeC4.value = document.myform.postalP2.value;
+	document.myform.StateC4.value = document.myform.StateP2.value;
+	document.myform.LGAC4.value = document.myform.LGAP2.value;
+}
+
+
+function copyP1addressC5 () {
+	document.myform.homeaddressC5.value = document.myform.homeaddressP1.value;
+	document.myform.suburbC5.value = document.myform.suburbP1.value;
+	document.myform.postalcodeC5.value = document.myform.postalP1.value;
+	document.myform.StateC5.value = document.myform.StateP1.value;
+	document.myform.LGAC5.value = document.myform.LGAP1.value;
+}
+
+function copyP2addressC5 () {
+	document.myform.homeaddressC5.value = document.myform.homeaddressP2.value;
+	document.myform.suburbC5.value = document.myform.suburbP2.value;
+	document.myform.postalcodeC5.value = document.myform.postalP2.value;
+	document.myform.StateC5.value = document.myform.StateP2.value;
+	document.myform.LGAC5.value = document.myform.LGAP2.value;
+}
+
+//  --------------------  End  Same Address buttons   ---------------------------------------------
+
+
+//  ==========================  End    SAME  buttons   ===================================
+
+
+
+
+//	=============================    Start  SAVE  ======================================
+//                  end of Save is at   ~  Line 1118
+
+function regex(words) {
+    words.toLowerCase();
+    words.charAt(0).toUpperCase();
+}
+
+for(var i = 0; i < document.myform.elements.length;i++)
+{
+    regex(document.myform.elements.item(i).value);
+}
+
+function regex_all_input() {
+
+    regex();
+
+}
+
+function save_Form()
+{
+var alertmessC1="";
+var alertmessC2="";
+var alertmessC3="";
+var alertmessC4="";
+var alertmessC5="";
+var termscondC1="";
+var alertmesscheckC1="";
+var alertmesscheckC2="";
+var alertmesscheckC3="";
+var alertmesscheckC4="";
+var alertmesscheckC5="";
+var termscondcheckC1="";
+var termmsC1="";
+var mandatory="";
+var alertmandatoryC1="";
+
+// mandatory fields P1
+if((document.myform.surnameP1.value=="")||(document.myform.firstnameP1.value=="")||(document.myform.homeaddressP1.value=="")||(document.myform.suburbP1.value=="")
+||(document.myform.mobileP1.value=="")||(document.myform.email1P1.value=="")||(document.myform.relationP1.value=="")||(document.myform.formYear.value==""))
+{
+//alert(' P1');
+mandatory="\n"+"Mandatory fields tagged with an asterix must have a value for each Child, Guardian and Emergency Contact.";
+}
+
+// mandatory fields P2
+if(document.myform.surnameP2.value!="")
+{
+if((document.myform.surnameP2.value=="")||(document.myform.firstnameP2.value=="")||(document.myform.homeaddressP2.value=="")||(document.myform.suburbP2.value=="")
+||(document.myform.mobileP2.value=="")||(document.myform.email1P2.value=="")||(document.myform.relationP2.value==""))
+{
+//alert(' P2');
+mandatory="\n"+"Mandatory fields tagged with an asterix must have a value for each Child, Guardian and Emergency Contact.";
+}
+}
+
+// mandatory fields E1
+if(document.myform.surnameE1.value!="")
+{
+if((document.myform.surnameE1.value=="")||(document.myform.firstnameE1.value=="")||(document.myform.homeaddressE1.value=="")||(document.myform.suburbE1.value=="")
+||(document.myform.mobileE1.value=="")||(document.myform.relationE1.value==""))
+{
+//alert(' E1');
+mandatory="\n"+"Mandatory fields tagged with an asterix must have a value for each Child, Guardian and Emergency Contact.";
+}
+}
+
+// mandatory fields Child Information C1
+if((document.myform.surnameC1.value=="")||(document.myform.firstnameC1.value=="")||(document.myform.genderC1.value=="")||(document.myform.homeaddressC1.value=="")
+||(document.myform.suburbC1.value=="")||(document.myform.dobC1.value=="")||(document.myform.mobileC1.value=="")||(document.myform.email1C1.value=="")
+||(document.myform.liveswithC1.value==""))
+{
+//alert(' C1');
+mandatory="\n"+"Mandatory fields tagged with an asterix must have a value for each Child, Guardian and Emergency Contact.";
+}
+
+
+// mandatory fields Child Information C2
+if(document.myform.surnameC2.value!="")
+{
+if((document.myform.surnameC2.value=="")||(document.myform.firstnameC2.value=="")||(document.myform.genderC2.value=="")||(document.myform.homeaddressC2.value=="")
+||(document.myform.suburbC2.value=="")||(document.myform.dobC2.value=="")||(document.myform.mobileC2.value=="")||(document.myform.email1C2.value=="")||(document.myform.liveswithC2.value==""))
+{
+//alert(' C2');
+mandatory="\n"+"Mandatory fields tagged with an asterix must have a value for each Child, Guardian and Emergency Contact.";
+}
+}
+
+// mandatory fields Child Information C3
+if(document.myform.surnameC3.value!="")
+{
+if((document.myform.surnameC3.value=="")||(document.myform.firstnameC3.value=="")||(document.myform.genderC3.value=="")||(document.myform.homeaddressC3.value=="")
+||(document.myform.suburbC3.value=="")||(document.myform.dobC3.value=="")||(document.myform.mobileC3.value=="")||(document.myform.email1C3.value=="")||(document.myform.liveswithC3.value==""))
+{
+//alert(' C3');
+mandatory="\n"+"Mandatory fields tagged with an asterix must have a value for each Child, Guardian and Emergency Contact.";
+}
+}
+
+// mandatory fields Child Information C4
+if(document.myform.surnameC4.value!="")
+{
+if((document.myform.surnameC4.value=="")||(document.myform.firstnameC4.value=="")||(document.myform.genderC4.value=="")||(document.myform.homeaddressC4.value=="")
+||(document.myform.suburbC4.value=="")||(document.myform.dobC4.value=="")||(document.myform.mobileC4.value=="")||(document.myform.email1C4.value=="")||(document.myform.liveswithC4.value==""))
+{
+//alert(' C4');
+mandatory="\n"+"Mandatory fields tagged with an asterix must have a value for each Child, Guardian and Emergency Contact.";
+}
+}
+
+//mandatory fields Child Information C5
+if(document.myform.surnameC5.value!="")
+{
+if((document.myform.surnameC5.value=="")||(document.myform.firstnameC5.value=="")||(document.myform.genderC5.value=="")||(document.myform.homeaddressC5.value=="")
+||(document.myform.suburbC5.value=="")||(document.myform.dobC5.value=="")||(document.myform.mobileC5.value=="")||(document.myform.email1C5.value=="")||(document.myform.liveswithC5.value==""))
+{
+//alert(' C5');
+mandatory="\n"+"Mandatory fields tagged with an asterix must have a value for each Child, Guardian and Emergency Contact.";
+}
+}
+
+
+if(!document.myform.terms.checked)
+{
+termscondC1="Acceptance of Term and Conditions, Year covered by Form";
+}
+
+
+// start mandatory fields Medical, etc C1
+if (liveswithC1=="")
+{
+alertmessC1=alertmessC1+"    - Which Programme"+"\n";
+}
+
+if ((!document.getElementById('InhaleryesC1').checked)&&(!document.getElementById('InhalernoC1').checked))
+{
+alertmessC1=alertmessC1+"    - Use of an Inhaler/Puffer"+"\n";
+}
+
+if ((!document.getElementById('EpiPenyesC1').checked)&&(!document.getElementById('EpiPennoC1').checked))
+{
+alertmessC1=alertmessC1+"    - Use of an EpiPen/Auto-Injector"+"\n";
+}
+
+if ((!document.getElementById('ActionPlanyesC1').checked)&&(!document.getElementById('ActionPlannoC1').checked))
+{
+alertmessC1=alertmessC1+"    - Action Plan for Allergic Reactions"+"\n";
+}
+
+if ((!document.getElementById('SpecialReqyesC1').checked)&&(!document.getElementById('SpecialReqnoC1').checked))
+{
+alertmessC1=alertmessC1+"    - Special Requirements"+"\n";
+}
+
+if ((!document.getElementById('mediaIntyesC1').checked)&&(!document.getElementById('mediaIntnoC1').checked))
+{
+alertmessC1=alertmessC1+"    - Media Permission Internal"+"\n";
+}
+
+if ((!document.getElementById('mediaExtyesC1').checked)&&(!document.getElementById('mediaExtnoC1').checked))
+{
+alertmessC1=alertmessC1+"    - Media Permissions External"+"\n";
+}
+
+var messtitle="The following questions require an answer before this form can be submitted:"+"\n";
+if(termscondC1!="")
+{
+termscondcheckC1="yes";
+}
+
+if(alertmessC1!="")
+{
+alertmesscheckC1="yes";
+}
+
+if(mandatory!="")
+{
+alertmandatoryC1="yes";
+}
+// end mandatory fields Medical, etc C1
+
+
+
+// start mandatory fields Medical, etc C2
+if(document.myform.surnameC2.value!="")
+{
+
+if (liveswithC2=="")
+{
+alertmessC2=alertmessC2+"    - Which Programme"+"\n";
+}
+
+if ((!document.getElementById('InhaleryesC2').checked)&&(!document.getElementById('InhalernoC2').checked))
+{
+alertmessC2=alertmessC2+"    - Use of an Inhaler/Puffer"+"\n";
+}
+
+if ((!document.getElementById('EpiPenyesC2').checked)&&(!document.getElementById('EpiPennoC2').checked))
+{
+alertmessC2=alertmessC2+"    - Use of an EpiPen/Auto-Injector"+"\n";
+}
+
+if ((!document.getElementById('ActionPlanyesC2').checked)&&(!document.getElementById('ActionPlannoC2').checked))
+{
+alertmessC2=alertmessC2+"    - Action Plan for Allergic Reactions"+"\n";
+}
+
+if ((!document.getElementById('SpecialReqyesC2').checked)&&(!document.getElementById('SpecialReqnoC2').checked))
+{
+alertmessC2=alertmessC2+"    - Special Requirements"+"\n";
+}
+
+if ((!document.getElementById('mediaIntyesC2').checked)&&(!document.getElementById('mediaIntnoC2').checked))
+{
+alertmessC2=alertmessC2+"    - Media Permission Internal"+"\n";
+}
+
+if ((!document.getElementById('mediaExtyesC2').checked)&&(!document.getElementById('mediaExtnoC2').checked))
+{
+alertmessC2=alertmessC2+"    - Media Permissions External"+"\n";
+}
+
+
+var messtitle="The following questions require an answer before this form can be submitted:"+"\n";
+if(alertmessC2!="")
+{
+alertmesscheckC2="yes";
+}
+
+} //end mandatory fields Medical, etc C2
+
+
+
+// start mandatory fields Medical, etc C3
+if(document.myform.surnameC3.value!="")
+{
+if (liveswithC3=="")
+{
+alertmessC3=alertmessC3+"    - Which Programme"+"\n";
+}
+
+if ((!document.getElementById('InhaleryesC3').checked)&&(!document.getElementById('InhalernoC3').checked))
+{
+alertmessC3=alertmessC3+"    - Use of an Inhaler/Puffer"+"\n";
+}
+
+if ((!document.getElementById('EpiPenyesC3').checked)&&(!document.getElementById('EpiPennoC3').checked))
+{
+alertmessC3=alertmessC3+"    - Use of an EpiPen/Auto-Injector"+"\n";
+}
+
+if ((!document.getElementById('ActionPlanyesC3').checked)&&(!document.getElementById('ActionPlannoC3').checked))
+{
+alertmessC3=alertmessC3+"    - Action Plan for Allergic Reactions"+"\n";
+}
+
+if ((!document.getElementById('SpecialReqyesC3').checked)&&(!document.getElementById('SpecialReqnoC3').checked))
+{
+alertmessC3=alertmessC3+"    - Special Requirements"+"\n";
+}
+
+if ((!document.getElementById('mediaIntyesC3').checked)&&(!document.getElementById('mediaIntnoC3').checked))
+{
+alertmessC3=alertmessC3+"    - Media Permission Internal"+"\n";
+}
+
+if ((!document.getElementById('mediaExtyesC3').checked)&&(!document.getElementById('mediaExtnoC3').checked))
+{
+alertmessC3=alertmessC3+"    - Media Permissions External"+"\n";
+}
+
+
+var messtitle="The following questions require an answer before this form can be submitted:"+"\n";
+if(alertmessC3!="")
+{
+alertmesscheckC3="yes";
+}
+} // end mandatory fields Medical, etc C3
+
+
+
+
+// start mandatory fields Medical, etc C4
+if(document.myform.surnameC4.value!="")
+{
+if (liveswithC4=="")
+{
+alertmessC4=alertmessC4+"    - Which Programme"+"\n";
+}
+
+if ((!document.getElementById('InhaleryesC4').checked)&&(!document.getElementById('InhalernoC4').checked))
+{
+alertmessC4=alertmessC4+"    - Use of an Inhaler/Puffer"+"\n";
+}
+
+if ((!document.getElementById('EpiPenyesC4').checked)&&(!document.getElementById('EpiPennoC4').checked))
+{
+alertmessC4=alertmessC4+"    - Use of an EpiPen/Auto-Injector"+"\n";
+}
+
+if ((!document.getElementById('ActionPlanyesC4').checked)&&(!document.getElementById('ActionPlannoC4').checked))
+{
+alertmessC4=alertmessC4+"    - Action Plan for Allergic Reactions"+"\n";
+}
+
+if ((!document.getElementById('SpecialReqyesC4').checked)&&(!document.getElementById('SpecialReqnoC4').checked))
+{
+alertmessC4=alertmessC4+"    - Special Requirements"+"\n";
+}
+
+if ((!document.getElementById('mediaIntyesC4').checked)&&(!document.getElementById('mediaIntnoC4').checked))
+{
+alertmessC4=alertmessC4+"    - Media Permission Internal"+"\n";
+}
+
+if ((!document.getElementById('mediaExtyesC4').checked)&&(!document.getElementById('mediaExtnoC4').checked))
+{
+alertmessC4=alertmessC4+"    - Media Permissions External"+"\n";
+}
+
+
+var messtitle="The following questions require an answer before this form can be submitted:"+"\n";
+if(alertmessC4!="")
+{
+alertmesscheckC4="yes";
+}
+} // end mandatory fields Medical, etc C4
+
+
+
+// start mandatory fields Medical, etc C5
+if(document.myform.surnameC5.value!="")
+{
+if (liveswithC5=="")
+{
+alertmessC5=alertmessC5+"    - Which Programme"+"\n";
+}
+
+if ((!document.getElementById('InhaleryesC5').checked)&&(!document.getElementById('InhalernoC5').checked))
+{
+alertmessC5=alertmessC5+"    - Use of an Inhaler/Puffer"+"\n";
+}
+
+if ((!document.getElementById('EpiPenyesC5').checked)&&(!document.getElementById('EpiPennoC5').checked))
+{
+alertmessC5=alertmessC5+"    - Use of an EpiPen/Auto-Injector"+"\n";
+}
+
+if ((!document.getElementById('ActionPlanyesC5').checked)&&(!document.getElementById('ActionPlannoC5').checked))
+{
+alertmessC5=alertmessC5+"    - Action Plan for Allergic Reactions"+"\n";
+}
+
+if ((!document.getElementById('SpecialReqyesC5').checked)&&(!document.getElementById('SpecialReqnoC5').checked))
+{
+alertmessC5=alertmessC5+"    - Special Requirements"+"\n";
+}
+
+if ((!document.getElementById('mediaIntyesC5').checked)&&(!document.getElementById('mediaIntnoC5').checked))
+{
+alertmessC5=alertmessC5+"    - Media Permission Internal"+"\n";
+}
+
+if ((!document.getElementById('mediaExtyesC5').checked)&&(!document.getElementById('mediaExtnoC5').checked))
+{
+alertmessC5=alertmessC5+"    - Media Permissions External"+"\n";
+}
+
+
+var messtitle="The following questions require an answer before this form can be submitted:"+"\n";
+if(alertmessC5!="")
+{
+alertmesscheckC5="yes";
+}
+} // end mandatory fields Medical, etc C5
+
+
+if((termscondcheckC1=="yes")||(alertmesscheckC1=="yes")||(alertmesscheckC2=="yes")||(alertmesscheckC3=="yes")||(alertmesscheckC4=="yes")||(alertmesscheckC5=="yes")||(alertmandatoryC1=="yes"))
+{  //  start alerts
+
+if(termscondcheckC1=="yes")
+{
+termmsC1="a. Consent Section: "+termscondC1+"\n";
+}
+
+if(alertmesscheckC1=="yes")
+{
+alertmessC1="b. Child 1 Section: "+"\n"+alertmessC1;
+}
+
+if(alertmesscheckC2=="yes")
+{
+alertmessC2="c. Child 2 Section: "+"\n"+alertmessC2;
+}
+
+if(alertmesscheckC3=="yes")
+{
+alertmessC3="d. Child 3 Section: "+"\n"+alertmessC3;
+}
+
+if(alertmesscheckC4=="yes")
+{
+alertmessC4="e. Child 4 Section: "+"\n"+alertmessC4;
+}
+
+if(alertmesscheckC5=="yes")
+{
+alertmessC5="f. Child 5 Section: "+"\n"+alertmessC5;
+}
+
+
+alert(messtitle+termmsC1+alertmessC1+alertmessC2+alertmessC3+alertmessC4+alertmessC5+mandatory);
+}
+else  //ok to save
+{
+
+
+//C1  Booleans
+if(document.getElementById('InhaleryesC1').checked)
+{
+document.myform.xt_InhalerC1.value = "yes";
+}
+else
+{
+document.myform.xt_InhalerC1.value = "no";
+}
+
+
+if(document.getElementById('EpiPenyesC1').checked)
+{
+document.myform.xt_epipenC1.value = "yes";
+}
+else
+{
+document.myform.xt_epipenC1.value = "no";
+}
+
+
+if(document.getElementById('ActionPlanyesC1').checked)
+{
+document.myform.xt_asciaC1.value = "yes";
+}
+else
+{
+document.myform.xt_asciaC1.value = "no";
+}
+
+
+if(document.getElementById('SpecialReqyesC1').checked)
+{
+document.myform.xt_specialrequC1.value = "yes";
+}
+else
+{
+document.myform.xt_specialrequC1.value = "no";
+}
+
+
+if(document.getElementById('mediaIntyesC1').checked)
+{
+document.myform.xt_mediaIntC1.value = "yes";
+}
+else
+{
+document.myform.xt_mediaIntC1.value = "no";
+}
+
+
+if(document.getElementById('mediaExtyesC1').checked)
+{
+document.myform.xt_mediaExtC1.value = "yes";
+}
+else
+{
+document.myform.xt_mediaExtC1.value = "no";
+}
+
+
+//C2  Booleans
+if(document.getElementById('InhaleryesC2').checked)
+{
+document.myform.xt_InhalerC2.value = "yes";
+}
+else
+{
+document.myform.xt_InhalerC2.value = "no";
+}
+
+
+if(document.getElementById('EpiPenyesC2').checked)
+{
+document.myform.xt_epipenC2.value = "yes";
+}
+else
+{
+document.myform.xt_epipenC2.value = "no";
+}
+
+
+if(document.getElementById('ActionPlanyesC2').checked)
+{
+document.myform.xt_asciaC2.value = "yes";
+}
+else
+{
+document.myform.xt_asciaC2.value = "no";
+}
+
+
+if(document.getElementById('SpecialReqyesC2').checked)
+{
+document.myform.xt_specialrequC2.value = "yes";
+}
+else
+{
+document.myform.xt_specialrequC2.value = "no";
+}
+
+
+if(document.getElementById('mediaIntyesC2').checked)
+{
+document.myform.xt_mediaIntC2.value = "yes";
+}
+else
+{
+document.myform.xt_mediaIntC2.value = "no";
+}
+
+
+if(document.getElementById('mediaExtyesC2').checked)
+{
+document.myform.xt_mediaExtC2.value = "yes";
+}
+else
+{
+document.myform.xt_mediaExtC2.value = "no";
+}
+
+
+//C3  Booleans
+if(document.getElementById('InhaleryesC3').checked)
+{
+document.myform.xt_InhalerC3.value = "yes";
+}
+else
+{
+document.myform.xt_InhalerC3.value = "no";
+}
+
+if(document.getElementById('EpiPenyesC3').checked)
+{
+document.myform.xt_epipenC3.value = "yes";
+}
+else
+{
+document.myform.xt_epipenC3.value = "no";
+}
+
+if(document.getElementById('ActionPlanyesC3').checked)
+{
+document.myform.xt_asciaC3.value = "yes";
+}
+else
+{
+document.myform.xt_asciaC3.value = "no";
+}
+if(document.getElementById('SpecialReqyesC3').checked)
+{
+document.myform.xt_specialrequC3.value = "yes";
+}
+else
+{
+document.myform.xt_specialrequC3.value = "no";
+}
+
+
+if(document.getElementById('mediaIntyesC3').checked)
+{
+document.myform.xt_mediaIntC3.value = "yes";
+}
+else
+{
+document.myform.xt_mediaIntC3.value = "no";
+}
+
+
+if(document.getElementById('mediaExtyesC3').checked)
+{
+document.myform.xt_mediaExtC3.value = "yes";
+}
+else
+{
+document.myform.xt_mediaExtC3.value = "no";
+}
+
+
+//C4  Booleans
+if(document.getElementById('InhaleryesC4').checked)
+{
+document.myform.xt_InhalerC4.value = "yes";
+}
+else
+{
+document.myform.xt_InhalerC4.value = "no";
+}
+
+
+if(document.getElementById('EpiPenyesC4').checked)
+{
+document.myform.xt_epipenC4.value = "yes";
+}
+else
+{
+document.myform.xt_epipenC4.value = "no";
+}
+
+
+if(document.getElementById('ActionPlanyesC4').checked)
+{
+document.myform.xt_asciaC4.value = "yes";
+}
+else
+{
+document.myform.xt_asciaC4.value = "no";
+}
+
+
+if(document.getElementById('SpecialReqyesC4').checked)
+{
+document.myform.xt_specialrequC4.value = "yes";
+}
+else
+{
+document.myform.xt_specialrequC4.value = "no";
+}
+
+
+if(document.getElementById('mediaIntyesC4').checked)
+{
+document.myform.xt_mediaIntC4.value = "yes";
+}
+else
+{
+document.myform.xt_mediaIntC4.value = "no";
+}
+
+
+if(document.getElementById('mediaExtyesC4').checked)
+{
+document.myform.xt_mediaExtC4.value = "yes";
+}
+else
+{
+document.myform.xt_mediaExtC4.value = "no";
+}
+
+
+//C5  Booleans
+if(document.getElementById('InhaleryesC5').checked)
+{
+document.myform.xt_InhalerC5.value = "yes";
+}
+else
+{
+document.myform.xt_InhalerC5.value = "no";
+}
+
+
+if(document.getElementById('EpiPenyesC5').checked)
+{
+document.myform.xt_epipenC5.value = "yes";
+}
+else
+{
+document.myform.xt_epipenC5.value = "no";
+}
+
+
+if(document.getElementById('ActionPlanyesC5').checked)
+{
+document.myform.xt_asciaC5.value = "yes";
+}
+else
+{
+document.myform.xt_asciaC5.value = "no";
+}
+
+
+if(document.getElementById('SpecialReqyesC5').checked)
+{
+document.myform.xt_specialrequC5.value = "yes";
+}
+else
+{
+document.myform.xt_specialrequC5.value = "no";
+}
+
+
+if(document.getElementById('mediaIntyesC5').checked)
+{
+document.myform.xt_mediaIntC5.value = "yes";
+}
+else
+{
+document.myform.xt_mediaIntC5.value = "no";
+}
+
+
+if(document.getElementById('mediaExtyesC5').checked)
+{
+document.myform.xt_mediaExtC5.value = "yes";
+}
+else
+{
+document.myform.xt_mediaExtC5.value = "no";
+}
+// End of Booleans
+
+
+document.myform.wt_Status.value = "new";
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_ConsentForm_Save', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+	if(this.response=="yes")
+	{
+	alert('Your form has been saved.\nYou will receive a confirmation email if the form was successfully submitted.\nIf you do not receive this response within an hour, please contact us to advise.\nThankyou.');
+	self.close();
+	}
+else
+	{
+	alert('Unfortunately, there was a problem - your form has not been submitted.\nThis may be due to a network error.\nPlease wait and try clicking the Save and Submit button later.');
+	}
+}
+}
+ xhr.send(formData);
+
+
+
+} //  end alerts
+
+
+
+} // ========================   end SAVE  ==============================
+
+
+
+
+function submit_Form()
+{
+}
+
+// ------- the following handles the Submit buttons for ASCIA and Special Requirements sections -------------
+// --------these have been commented out in the html code because Arnaud was unable to get the form to save if docs were attached
+
+function asciac1yes()
+{
+document.getElementById("asciac1").style.display = "inline";
+}
+function asciac1no()
+{
+document.getElementById("asciac1").style.display = "none";
+}
+
+function requc1yes()
+{
+document.getElementById("requc1").style.display = "inline";
+}
+function requc1no()
+{
+document.getElementById("requc1").style.display = "none";
+}
+
+
+function asciac2yes()
+{
+document.getElementById("asciac2").style.display = "inline";
+}
+function asciac2no()
+{
+document.getElementById("asciac2").style.display = "none";
+}
+
+function requc2yes()
+{
+document.getElementById("requc2").style.display = "inline";
+}
+function requc2no()
+{
+document.getElementById("requc2").style.display = "none";
+}
+
+
+function asciac3yes()
+{
+document.getElementById("asciac3").style.display = "inline";
+}
+function asciac3no()
+{
+document.getElementById("asciac3").style.display = "none";
+}
+
+function requc3yes()
+{
+document.getElementById("requc3").style.display = "inline";
+}
+function requc3no()
+{
+document.getElementById("requc3").style.display = "none";
+}
+
+
+function asciac4yes()
+{
+document.getElementById("asciac4").style.display = "inline";
+}
+function asciac4no()
+{
+document.getElementById("asciac4").style.display = "none";
+}
+
+function requc4yes()
+{
+document.getElementById("requc4").style.display = "inline";
+}
+function requc4no()
+{
+document.getElementById("requc4").style.display = "none";
+}
+
+
+function asciac5yes()
+{
+document.getElementById("asciac5").style.display = "inline";
+}
+function asciac5no()
+{
+document.getElementById("asciac5").style.display = "none";
+}
+
+function requc5yes()
+{
+document.getElementById("requc5").style.display = "inline";
+}
+function requc5no()
+{
+document.getElementById("requc5").style.display = "none";
+}
+
+//      end of Submit button for ASCIA and Special Requirements
+
+
+
+
+//   =================    The following automatically places names in the Consent Area =============================
+
+function P1NameChange()  // Primary Parent's name
+{
+document.getElementById("consentName").innerHTML = document.myform.firstnameP1.value+" "+document.myform.surnameP1.value;
+document.getElementById("Signed").innerHTML = document.myform.firstnameP1.value+" "+document.myform.surnameP1.value;
+document.getElementById("consentRelation").innerHTML = document.myform.relationP1.value;
+}
+
+function P1RelationChange()  // Primary Parent's relationship to children
+{
+document.getElementById("consentRelation").innerHTML = document.myform.relationP1.value;
+}
+
+
+
+function C1NameChange()  // Start Consent Area Children's names
+{
+
+if((document.myform.surnameC1.value!="") && (document.myform.surnameC2.value=="") && (document.myform.surnameC3.value=="") && (document.myform.surnameC4.value=="") && (document.myform.surnameC5.value==""))
+{
+document.getElementById("consentAllKids").innerHTML = document.myform.firstnameC1.value+" "+document.myform.surnameC1.value;
+}
+
+if((document.myform.surnameC1.value!="") && (document.myform.surnameC2.value!="") && (document.myform.surnameC3.value=="") && (document.myform.surnameC4.value=="") && (document.myform.surnameC5.value==""))
+{
+document.getElementById("consentAllKids").innerHTML = document.myform.firstnameC1.value+" "+document.myform.surnameC1.value+", "+document.myform.firstnameC2.value+" "+document.myform.surnameC2.value;
+}
+
+if((document.myform.surnameC1.value!="") && (document.myform.surnameC2.value!="") && (document.myform.surnameC3.value!="") && (document.myform.surnameC4.value=="") && (document.myform.surnameC5.value==""))
+{
+document.getElementById("consentAllKids").innerHTML = document.myform.firstnameC1.value+" "+document.myform.surnameC1.value+", "+document.myform.firstnameC2.value+" "+document.myform.surnameC2.value+", "+document.myform.firstnameC3.value+" "+document.myform.surnameC3.value;
+}
+
+if((document.myform.surnameC1.value!="") && (document.myform.surnameC2.value!="") && (document.myform.surnameC3.value!="") && (document.myform.surnameC4.value!="") && (document.myform.surnameC5.value==""))
+{
+document.getElementById("consentAllKids").innerHTML = document.myform.firstnameC1.value+" "+document.myform.surnameC1.value+", "+document.myform.firstnameC2.value+" "+document.myform.surnameC2.value+", "+document.myform.firstnameC3.value+" "+document.myform.surnameC3.value+", "+document.myform.firstnameC4.value+" "+document.myform.surnameC4.value;
+}
+
+if((document.myform.surnameC1.value!="") && (document.myform.surnameC2.value!="") && (document.myform.surnameC3.value!="") && (document.myform.surnameC4.value!="") && (document.myform.surnameC5.value!=""))
+{
+document.getElementById("consentAllKids").innerHTML = document.myform.firstnameC1.value+" "+document.myform.surnameC1.value+", "+document.myform.firstnameC2.value+" "+document.myform.surnameC2.value+", "+document.myform.firstnameC3.value+" "+document.myform.surnameC3.value+", "+document.myform.firstnameC4.value+" "+document.myform.surnameC4.value+", "+document.myform.firstnameC5.value+" "+document.myform.surnameC5.value;
+}
+
+}   // ==========================  End Consent Area  ==================================
+
+
+
+
+
+//  =============================  start   Type Ahead  ==================================
+
+
+// ----------------      start of CITY Parent 1 Type Ahead  --------------------
+
+function allcitiesP1()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Cities?Parent1', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("cities_displayP1").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function choosecitiesP1()
+{
+var x = document.getElementById("citiesP1");
+var i;
+for (i = 0; i < x.options.length; i++) {
+   if(document.myform.suburbP1.value == x.options[i].value)
+   {
+   var details = x.options[i].id.split("<<>>");
+   document.myform.suburbP1.value = details[0] ;   // suburbP1
+   document.myform.postalP1.value = details[1] ;   //  postalP1
+   document.myform.StateP1.value = details[2] ;   // StateP1
+   document.myform.LGAP1.value = details[3] ;   //  LGAP1
+   }
+  }
+}
+
+// ------------------end of City Parent 1 Type Ahead  ----------------------------
+
+
+// ----------------  start of CITY Parent 2 Type Ahead  --------------------
+
+function allcitiesP2()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Cities?Parent2', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("cities_displayP2").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function choosecitiesP2()
+{
+var x = document.getElementById("citiesP2");
+var i;
+for (i = 0; i < x.options.length; i++) {
+   if(document.myform.suburbP2.value == x.options[i].value)
+   {
+   var details = x.options[i].id.split("<<>>");
+   document.myform.suburbP2.value = details[0] ;   // suburbP2
+   document.myform.postalP2.value = details[1] ;   //  postalP2
+   document.myform.StateP2.value = details[2] ;   // StateP2
+   document.myform.LGAP2.value = details[3] ;   //  LGAP2
+   }
+  }
+}
+
+// ------------------end of City Parent 2 Type Ahead  ----------------------------
+
+
+
+// ----------------  start of CITY Emergency Contact 1 Type Ahead  --------------------
+
+function allcitiesE1()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Cities?EmergContact1', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("cities_displayE1").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function choosecitiesE1()
+{
+var x = document.getElementById("citiesE1");
+var i;
+for (i = 0; i < x.options.length; i++) {
+   if(document.myform.suburbE1.value == x.options[i].value)
+   {
+   var details = x.options[i].id.split("<<>>");
+   document.myform.suburbE1.value = details[0] ;   // suburbE1
+   document.myform.postalE1.value = details[1] ;   //  postalE1
+   document.myform.StateE1.value = details[2] ;   // StateE1
+   document.myform.LGAE1.value = details[3] ;   //  LGAE1
+   }
+  }
+}
+
+// ------------------end of City Emergency Contact 1 Type Ahead  ----------------------------
+
+
+
+
+// ----------------      start of CITY Child 1 Type Ahead  --------------------
+
+function allcitiesC1()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Cities?Child1', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("cities_displayC1").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function choosecitiesC1()
+{
+var x = document.getElementById("citiesC1");
+var i;
+for (i = 0; i < x.options.length; i++) {
+   if(document.myform.suburbC1.value == x.options[i].value)
+   {
+   var details = x.options[i].id.split("<<>>");
+   document.myform.suburbC1.value = details[0] ;
+   document.myform.postalcodeC1.value = details[1] ;
+   document.myform.StateC1.value = details[2] ;
+   document.myform.LGAPC1.value = details[3] ;
+   }
+  }
+}
+
+// ------------------end of City Child 1 Type Ahead  ----------------------------
+
+
+// ----------------      start of CITY Child 2 Type Ahead  --------------------
+
+function allcitiesC2()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Cities?Child2', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("cities_displayC2").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function choosecitiesC2()
+{
+var x = document.getElementById("citiesC2");
+var i;
+for (i = 0; i < x.options.length; i++) {
+   if(document.myform.suburbC2.value == x.options[i].value)
+   {
+   var details = x.options[i].id.split("<<>>");
+   document.myform.suburbC2.value = details[0] ;
+   document.myform.postalcodeC2.value = details[1] ;
+   document.myform.StateC2.value = details[2] ;
+   document.myform.LGAPC2.value = details[3] ;
+   }
+  }
+}
+
+// ------------------end of City Child 2 Type Ahead  ----------------------------
+
+
+// ----------------      start of CITY Child 3 Type Ahead  --------------------
+
+function allcitiesC3()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Cities?Child3', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("cities_displayC3").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function choosecitiesC3()
+{
+var x = document.getElementById("citiesC3");
+var i;
+for (i = 0; i < x.options.length; i++) {
+   if(document.myform.suburbC3.value == x.options[i].value)
+   {
+   var details = x.options[i].id.split("<<>>");
+   document.myform.suburbC3.value = details[0] ;
+   document.myform.postalcodeC3.value = details[1] ;
+   document.myform.StateC3.value = details[2] ;
+   document.myform.LGAPC3.value = details[3] ;
+   }
+  }
+}
+
+// ------------------end of City Child 3 Type Ahead  ----------------------------
+
+
+// ----------------      start of CITY Child 4 Type Ahead  --------------------
+
+function allcitiesC4()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Cities?Child4', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("cities_displayC4").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function choosecitiesC4()
+{
+var x = document.getElementById("citiesC4");
+var i;
+for (i = 0; i < x.options.length; i++) {
+   if(document.myform.suburbC4.value == x.options[i].value)
+   {
+   var details = x.options[i].id.split("<<>>");
+   document.myform.suburbC4.value = details[0] ;
+   document.myform.postalcodeC4.value = details[1] ;
+   document.myform.StateC4.value = details[2] ;
+   document.myform.LGAPC4.value = details[3] ;
+   }
+  }
+}
+
+// ------------------end of City Child 4 Type Ahead  ----------------------------
+
+
+// ----------------      start of CITY Child 5 Type Ahead  --------------------
+
+function allcitiesC5()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Cities?Child5', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("cities_displayC5").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function choosecitiesC5()
+{
+var x = document.getElementById("citiesC5");
+var i;
+for (i = 0; i < x.options.length; i++) {
+   if(document.myform.suburbC5.value == x.options[i].value)
+   {
+   var details = x.options[i].id.split("<<>>");
+   document.myform.suburbC5.value = details[0] ;
+   document.myform.postalcodeC5.value = details[1] ;
+   document.myform.StateC5.value = details[2] ;
+   document.myform.LGAPC5.value = details[3] ;
+   }
+  }
+}
+
+// ------------------end of City Child 5 Type Ahead  ----------------------------
+
+
+// ---------------------  start of SURNAME Parent 1 Type Ahead  -------------------------
+
+function allContactsP1()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Contact?Parent1', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+//alert(this.response);
+document.getElementById("contacts_displayP1").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function chooseContactsP1()
+{
+var x = document.getElementById("ContactsP1");
+var i;
+for (i = 0; i < x.options.length; i++) {
+
+	  	 if(document.myform.surnameP1.value == x.options[i].value)
+	 	 {
+	 	 var details = x.options[i].id.split("<<>>");
+	 	 document.myform.surnameP1.value = details[0] ;
+	 	 document.myform.firstnameP1.value = details[1] ;
+	  	 document.myform.homeaddressP1.value = details[2] ;
+ 	  	document.myform.suburbP1.value = details[3] ;
+ 	  	document.myform.postalP1.value = details[4] ;
+  	 	document.myform.StateP1.value = details[5] ;
+ 		document.myform.LGAP1.value = details[6] ;
+ 		 document.myform.mobileP1.value = details[7] ;
+ 		document.myform.tel1P1.value = details[8] ;
+ 		document.myform.tel2P1.value = details[9] ;
+ 		document.myform.email1P1.value = details[10] ;
+ 		document.myform.email2P1.value = details[11] ;
+ 		document.myform.relationP1.value = details[12] ;
+ 	 	document.myform.prefixP1.value = details[13] ;
+       document.myform.ContactIDP1.value = details[14] ;
+ 	 	alert('Please ensure the information for the person selected is up-to-date.');
+ 	  }
+
+  }  // end for
+
+  P1NameChange();
+}
+
+// --------------------  end of Parent 1 Type Ahead  -------------------------------
+
+
+
+// ---------------------  start of SURNAME Parent 2 Type Ahead  --------------------
+
+function allContactsP2()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Contact?Parent2', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("contacts_displayP2").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function chooseContactsP2()
+{
+var x = document.getElementById("ContactsP2");
+var i;
+for (i = 0; i < x.options.length; i++) {
+   if(document.myform.surnameP2.value == x.options[i].value)
+   {
+   var details = x.options[i].id.split("<<>>");
+   document.myform.surnameP2.value = details[0] ;
+   document.myform.firstnameP2.value = details[1] ;
+   document.myform.homeaddressP2.value = details[2] ;
+   document.myform.suburbP2.value = details[3] ;
+   document.myform.postalP2.value = details[4] ;
+   document.myform.StateP2.value = details[5] ;
+   document.myform.LGAP2.value = details[6] ;
+   document.myform.mobileP2.value = details[7] ;
+ 	document.myform.tel1P2.value = details[8] ;
+ 	document.myform.tel2P2.value = details[9] ;
+ 	document.myform.email1P2.value = details[10] ;
+ 	document.myform.email2P2.value = details[11] ;
+ 	document.myform.relationP2.value = details[12] ;
+ 	 document.myform.prefixP2.value = details[13] ;
+    document.myform.ContactIDP2.value = details[14] ;
+ 	 alert('Please ensure the information for the person selected is up-to-date.');
+   }
+  }
+}
+
+// ------------------------  end of Parent 2 Type Ahead  ----------------------------
+
+
+// -----------------  start of SURNAME Emergency Contact 2 Type Ahead  ----------------
+
+function allContactsE1()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Contact?EmergContact1', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("contacts_displayE1").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function chooseContactsE1()
+{
+var x = document.getElementById("ContactsE1");
+var i;
+for (i = 0; i < x.options.length; i++) {
+   if(document.myform.surnameE1.value == x.options[i].value)
+   {
+   var details = x.options[i].id.split("<<>>");
+   document.myform.surnameE1.value = details[0] ;
+   document.myform.firstnameE1.value = details[1] ;
+   document.myform.homeaddressE1.value = details[2] ;
+   document.myform.suburbE1.value = details[3] ;
+   document.myform.postalE1.value = details[4] ;
+   document.myform.StateE1.value = details[5] ;
+   document.myform.LGAE1.value = details[6] ;
+   document.myform.mobileE1.value = details[7] ;
+   document.myform.tel1E1.value = details[8] ;     //Not Req'd
+    document.myform.tel2E1.value = details[9] ;       //Not Req'd
+ 	document.myform.emailE1.value = details[10] ;
+ 	document.myform.email2E1.value = details[11] ;    //Not Req'd
+ 	document.myform.relationE1.value = details[12] ;
+ 	document.myform.prefixE1.value = details[13] ;    //Not Req'd
+    document.myform.ContactIDE1.value = details[14] ;
+ 	 alert('Please ensure the information for the person selected is up-to-date.');
+   }
+  }
+}
+
+// -------------  end of Surname Emergency Contact 2 Type Ahead  ----------------
+
+
+
+
+// ----------------  start of Surname Child 1 Type Ahead  --------------------
+
+function allContactsC1()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Contact_v2?Child1', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("contacts_displayC1").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function chooseContactsC1()
+{
+var x = document.getElementById("ContactsC1");
+var i;
+for (i = 0; i < x.options.length; i++) {
+
+	  	 if(document.myform.surnameC1.value == x.options[i].value)
+	 	 {
+	 	 var details = x.options[i].id.split("<<>>");
+	 	 document.myform.surnameC1.value = details[0] ;
+	 	 document.myform.firstnameC1.value = details[1] ;
+	  	 document.myform.akaC1.value = details[2] ;
+ 	  	document.myform.genderC1.value = details[3] ;
+ 	  	document.myform.dobC1.value = details[4] ;
+  	 	document.myform.homeaddressC1.value = details[5] ;
+ 		document.myform.suburbC1.value = details[6] ;
+ 		 document.myform.postalcodeC1.value = details[7] ;
+ 		document.myform.StateC1.value = details[8] ;
+ 		document.myform.LGAC1.value = details[9] ;
+ 		document.myform.telC1.value = details[10] ;
+ 		document.myform.mobileC1.value = details[11] ;
+ 		document.myform.email1C1.value = details[12] ;
+ 	 	document.myform.email2C1.value = details[13] ;
+ 	 	document.myform.SchoolYrC1.value = details[14] ;
+ 	 	document.myform.schoolC1.value = details[15] ;
+ 	 	document.myform.liveswithC1.value = details[16] ;
+    	document.myform.InhaleryesC1.value = details[17] ;
+ 	 	document.myform.EpiPenyesC1.value = details[18] ;
+ 	   document.myform.ActionPlanyesC1.value = details[19] ;
+ 	   document.myform.SpecialReqyesC1.value = details[20] ;
+	   document.myform.commentsC1.value = details[21] ;
+	   document.myform.otherComC1.value = details[22] ;
+	   document.myform.mediaIntyesC1.value = details[23] ;
+	   document.myform.mediaExtyesC1.value = details[24] ;
+       document.myform.ContactIDC1.value = details[25] ;
+ 	  alert('Please ensure the information for the person selected is up-to-date.');
+ 	  }
+
+  }  // end for
+  C1NameChange();
+}
+
+// ------------------end of Surname Child 1 Type Ahead  ----------------------------
+
+
+
+// ----------------  start of Surname Child 2 Type Ahead  --------------------
+
+function allContactsC2()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Contact_v2?Child2', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("contacts_displayC2").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function chooseContactsC2()
+{
+var x = document.getElementById("ContactsC2");
+var i;
+for (i = 0; i < x.options.length; i++) {
+
+	  	 if(document.myform.surnameC2.value == x.options[i].value)
+	 	 {
+	 	 var details = x.options[i].id.split("<<>>");
+	 	 document.myform.surnameC2.value = details[0] ;
+	 	 document.myform.firstnameC2.value = details[1] ;
+	  	 document.myform.akaC2.value = details[2] ;
+ 	  	document.myform.genderC2.value = details[3] ;
+ 	  	document.myform.dobC2.value = details[4] ;
+  	 	document.myform.homeaddressC2.value = details[5] ;
+ 		document.myform.suburbC2.value = details[6] ;
+ 		 document.myform.postalcodeC2.value = details[7] ;
+ 		document.myform.StateC2.value = details[8] ;
+ 		document.myform.LGAC2.value = details[9] ;
+ 		document.myform.telC2.value = details[10] ;
+ 		document.myform.mobileC2.value = details[11] ;
+ 		document.myform.email1C2.value = details[12] ;
+ 	 	document.myform.email2C2.value = details[13] ;
+ 	 	document.myform.SchoolYrC2.value = details[14] ;
+ 	 	document.myform.schoolC2.value = details[15] ;
+ 	 	document.myform.liveswithC2.value = details[16] ;
+    	document.myform.InhaleryesC2.value = details[17] ;
+ 	 	document.myform.EpiPenyesC2.value = details[18] ;
+ 	   document.myform.ActionPlanyesC2.value = details[19] ;
+ 	   document.myform.SpecialReqyesC2.value = details[20] ;
+	   document.myform.commentsC2.value = details[21] ;
+	   document.myform.otherComC2.value = details[22] ;
+	   document.myform.mediaIntyesC2.value = details[23] ;
+	   document.myform.mediaExtyesC2.value = details[24] ;
+       document.myform.ContactIDC2.value = details[25] ;
+ 	  alert('Please ensure the information for the person selected is up-to-date.');
+ 	  }
+
+  }  // end for
+  C1NameChange();
+}
+
+// ------------------end of Surname Child 2 Type Ahead  ----------------------------
+
+
+
+// ----------------  start of Surname Child 3 Type Ahead  --------------------
+
+function allContactsC3()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Contact_v2?Child3', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("contacts_displayC3").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function chooseContactsC3()
+{
+var x = document.getElementById("ContactsC3");
+var i;
+for (i = 0; i < x.options.length; i++) {
+
+	  	 if(document.myform.surnameC3.value == x.options[i].value)
+	 	 {
+	 	 var details = x.options[i].id.split("<<>>");
+	 	 document.myform.surnameC3.value = details[0] ;
+	 	 document.myform.firstnameC3.value = details[1] ;
+	  	 document.myform.akaC3.value = details[2] ;
+ 	  	document.myform.genderC3.value = details[3] ;
+ 	  	document.myform.dobC3.value = details[4] ;
+  	 	document.myform.homeaddressC3.value = details[5] ;
+ 		document.myform.suburbC3.value = details[6] ;
+ 		 document.myform.postalcodeC3.value = details[7] ;
+ 		document.myform.StateC3.value = details[8] ;
+ 		document.myform.LGAC3.value = details[9] ;
+ 		document.myform.telC3.value = details[10] ;
+ 		document.myform.mobileC3.value = details[11] ;
+ 		document.myform.email1C3.value = details[12] ;
+ 	 	document.myform.email2C3.value = details[13] ;
+ 	 	document.myform.SchoolYrC3.value = details[14] ;
+ 	 	document.myform.schoolC3.value = details[15] ;
+ 	 	document.myform.liveswithC3.value = details[16] ;
+    	document.myform.InhaleryesC3.value = details[17] ;
+ 	 	document.myform.EpiPenyesC3.value = details[18] ;
+ 	   document.myform.ActionPlanyesC3.value = details[19] ;
+ 	   document.myform.SpecialReqyesC3.value = details[20] ;
+	   document.myform.commentsC3.value = details[21] ;
+	   document.myform.otherComC3.value = details[22] ;
+	   document.myform.mediaIntyesC3.value = details[23] ;
+	   document.myform.mediaExtyesC3.value = details[24] ;
+       document.myform.ContactIDC3.value = details[25] ;
+ 	  alert('Please ensure the information for the person selected is up-to-date.');
+ 	  }
+
+  }  // end for
+  C1NameChange();
+}
+
+// ------------------end of Surname Child 3 Type Ahead  ----------------------------
+
+
+
+// ----------------  start of Surname Child 4 Type Ahead  --------------------
+
+function allContactsC4()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Contact_v2?Child4', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("contacts_displayC4").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function chooseContactsC4()
+{
+var x = document.getElementById("ContactsC4");
+var i;
+for (i = 0; i < x.options.length; i++) {
+
+	  	 if(document.myform.surnameC4.value == x.options[i].value)
+	 	 {
+	 	 var details = x.options[i].id.split("<<>>");
+	 	 document.myform.surnameC4.value = details[0] ;
+	 	 document.myform.firstnameC4.value = details[1] ;
+	  	 document.myform.akaC4.value = details[2] ;
+ 	  	document.myform.genderC4.value = details[3] ;
+ 	  	document.myform.dobC4.value = details[4] ;
+  	 	document.myform.homeaddressC4.value = details[5] ;
+ 		document.myform.suburbC4.value = details[6] ;
+ 		 document.myform.postalcodeC4.value = details[7] ;
+ 		document.myform.StateC4.value = details[8] ;
+ 		document.myform.LGAC4.value = details[9] ;
+ 		document.myform.telC4.value = details[10] ;
+ 		document.myform.mobileC4.value = details[11] ;
+ 		document.myform.email1C4.value = details[12] ;
+ 	 	document.myform.email2C4.value = details[13] ;
+ 	 	document.myform.SchoolYrC4.value = details[14] ;
+ 	 	document.myform.schoolC4.value = details[15] ;
+ 	 	document.myform.liveswithC4.value = details[16] ;
+    	document.myform.InhaleryesC4.value = details[17] ;
+ 	 	document.myform.EpiPenyesC4.value = details[18] ;
+ 	   document.myform.ActionPlanyesC4.value = details[19] ;
+ 	   document.myform.SpecialReqyesC4.value = details[20] ;
+	   document.myform.commentsC4.value = details[21] ;
+	   document.myform.otherComC4.value = details[22] ;
+	   document.myform.mediaIntyesC4.value = details[23] ;
+	   document.myform.mediaExtyesC4.value = details[24] ;
+       document.myform.ContactIDC4.value = details[25] ;
+ 	  alert('Please ensure the information for the person selected is up-to-date.');
+ 	  }
+
+  }  // end for
+  C1NameChange();
+}
+
+// ------------------end of Surname Child 4 Type Ahead  ----------------------------
+
+
+
+// ----------------  start of Surname Child 5 Type Ahead  --------------------
+
+function allContactsC5()
+{
+myform.setAttribute( "autocomplete", "off" );
+var formData = new FormData(myform);
+var xhr = new XMLHttpRequest();
+xhr.open('POST', '/4DACTION/Web_Search_InfoForm1_Contact_v2?Child5', false);
+xhr.onload = function(e) {
+if (this.status == 200) {
+document.getElementById("contacts_displayC5").innerHTML = this.response;
+}
+}
+ xhr.send(formData);
+}
+
+
+function chooseContactsC5()
+{
+var x = document.getElementById("ContactsC5");
+var i;
+for (i = 0; i < x.options.length; i++) {
+
+	  	 if(document.myform.surnameC5.value == x.options[i].value)
+	 	 {
+	 	 var details = x.options[i].id.split("<<>>");
+	 	 document.myform.surnameC5.value = details[0] ;
+	 	 document.myform.firstnameC5.value = details[1] ;
+	  	 document.myform.akaC5.value = details[2] ;
+ 	  	document.myform.genderC5.value = details[3] ;
+ 	  	document.myform.dobC5.value = details[4] ;
+  	 	document.myform.homeaddressC5.value = details[5] ;
+ 		document.myform.suburbC5.value = details[6] ;
+ 		 document.myform.postalcodeC5.value = details[7] ;
+ 		document.myform.StateC5.value = details[8] ;
+ 		document.myform.LGAC5.value = details[9] ;
+ 		document.myform.telC5.value = details[10] ;
+ 		document.myform.mobileC5.value = details[11] ;
+ 		document.myform.email1C5.value = details[12] ;
+ 	 	document.myform.email2C5.value = details[13] ;
+ 	 	document.myform.SchoolYrC5.value = details[14] ;
+ 	 	document.myform.schoolC5.value = details[15] ;
+ 	 	document.myform.liveswithC5.value = details[16] ;
+    	document.myform.InhaleryesC5.value = details[17] ;
+ 	 	document.myform.EpiPenyesC5.value = details[18] ;
+ 	   document.myform.ActionPlanyesC5.value = details[19] ;
+ 	   document.myform.SpecialReqyesC5.value = details[20] ;
+	   document.myform.commentsC5.value = details[21] ;
+	   document.myform.otherComC5.value = details[22] ;
+	   document.myform.mediaIntyesC5.value = details[23] ;
+	   document.myform.mediaExtyesC5.value = details[24] ;
+       document.myform.ContactIDC5.value = details[25] ;
+ 	  alert('Please ensure the information for the person selected is up-to-date.');
+ 	  }
+
+  }  // end for
+  C1NameChange();
+}
+
+// ------------------end of Surname Child 5 Type Ahead  ----------------------------
+
+
+
+
+
+//  =============================  end   Type Ahead  ==================================
+
+
+
+</script>
+
+
+<body>
+
+
+
+<form name="myform" action="/4DACTION/Web_ConsentForm_Save" method="post">
+
+<input type="hidden" name="xt_User" value="<!--4DVAR xt_User-->">
+<input type="hidden" name="wt_Staff" value="<!--4DVAR wt_Staff-->">
+<input type="hidden" name="wt_Status" value="">
+<input type="hidden" name="xt_ID" value="<!--4DVAR xt_ID-->">
+
+<input type="hidden" name="ContactIDP1" value="">
+<input type="hidden" name="StateP1" value="">
+<input type="hidden" name="LGAP1" value="">
+
+<input type="hidden" name="ContactIDP2" value="">
+<input type="hidden" name="StateP2" value="">
+<input type="hidden" name="LGAP2" value="">
+
+<input type="hidden" name="ContactIDE1" value="">
+<input type="hidden" name="StateE1" value="">
+<input type="hidden" name="LGAE1" value="">
+<input type="hidden" name="tel1E1" value="">
+<input type="hidden" name="tel2E1" value="">
+<input type="hidden" name="email2E1" value="">
+<input type="hidden" name="prefixE1" value="">
+
+<input type="hidden" name="ContactIDC1" value="">
+<input type="hidden" name="StateC1" value="">
+<input type="hidden" name="LGAC1" value="">
+<input type="hidden" name="xt_InhalerC1" value="">
+<input type="hidden" name="xt_epipenC1" value="">
+<input type="hidden" name="xt_asciaC1" value="">
+<input type="hidden" name="xt_specialrequC1" value="">
+<input type="hidden" name="xt_mediaIntC1" value="">
+<input type="hidden" name="xt_mediaExtC1" value="">
+
+<input type="hidden" name="ContactIDC2" value="">
+<input type="hidden" name="StateC2" value="">
+<input type="hidden" name="LGAC2" value="">
+<input type="hidden" name="xt_InhalerC2" value="">
+<input type="hidden" name="xt_epipenC2" value="">
+<input type="hidden" name="xt_asciaC2" value="">
+<input type="hidden" name="xt_specialrequC2" value="">
+<input type="hidden" name="xt_mediaIntC2" value="">
+<input type="hidden" name="xt_mediaExtC2" value="">
+
+<input type="hidden" name="ContactIDC3" value="">
+<input type="hidden" name="StateC3" value="">
+<input type="hidden" name="LGAC3" value="">
+<input type="hidden" name="xt_InhalerC3" value="">
+<input type="hidden" name="xt_epipenC3" value="">
+<input type="hidden" name="xt_asciaC3" value="">
+<input type="hidden" name="xt_specialrequC3" value="">
+<input type="hidden" name="xt_mediaIntC3" value="">
+<input type="hidden" name="xt_mediaExtC3" value="">
+
+<input type="hidden" name="ContactIDC4" value="">
+<input type="hidden" name="StateC4" value="">
+<input type="hidden" name="LGAC4" value="">
+<input type="hidden" name="xt_InhalerC4" value="">
+<input type="hidden" name="xt_epipenC4" value="">
+<input type="hidden" name="xt_asciaC4" value="">
+<input type="hidden" name="xt_specialrequC4" value="">
+<input type="hidden" name="xt_mediaIntC4" value="">
+<input type="hidden" name="xt_mediaExtC4" value="">
+
+<input type="hidden" name="ContactIDC5" value="">
+<input type="hidden" name="StateC5" value="">
+<input type="hidden" name="LGAC5" value="">
+<input type="hidden" name="xt_InhalerC5" value="">
+<input type="hidden" name="xt_epipenC5" value="">
+<input type="hidden" name="xt_asciaC5" value="">
+<input type="hidden" name="xt_specialrequC5" value>
+<input type="hidden" name="xt_mediaIntC5" value="">
+<input type="hidden" name="xt_mediaExtC5" value="">
+
+
+<table width="100%" border="0">
+<tr>
+<td>
+<!--4DVAR [Entities_118]Entity_Logo_118-->
+</td>
+<td align="right">
+<span class="makebold size16 valigntop alignright makeblue"><!--4DVAR [LookUps_9]Trade_Name--><img src="../spacer.jpg" width="20" height="0"></span>
+
+<br>
+
+<span class="makebold size14 valigntop alignright"><!--4DVAR [Entities_118]Entity_Name_118--><img src="../spacer.jpg" width="20" height="0"></span>
+<br>
+<span class="makebold size12 valigntop"><!--4DVAR [Locations_28]Address_28-->, <!--4DVAR [Locations_28]City_28-->, <!--4DVAR [Locations_28]Prov_State_28-->, <!--4DVAR [Locations_28]PC_Zip_28--><img src="../spacer.jpg" width="20" height="0"></span>
+<br><br>
+<span class="makebold size22 valignbottom makebrown"><!--4DVAR [Form_Types_87]Form_Name--><img src="../spacer.jpg" width="20" height="0"></span></td>
+</tr>
+</table>
+
+
+<hr>
+<!--4DHTMLVAR [Form_Types_87]Opening_Para_1-->
+
+<input type="button" class="button" name="legal" value="Show More" id="legalbut" onclick="javascript:showlegal(value);">
+
+<br>
+<div id="legaldisclosure">
+<p>
+<!--4DHTMLVAR [Form_Types_87]Opening_Para_2-->
+</p>
+</div>
+
+<hr>
+<br>
+
+<!-- 03212018 -->
+<!-- <span class="makebold size14 makeblue">Number of parents and guardians covered by this form:&nbsp;&nbsp;&nbsp;&nbsp;</span> -->
+<!-- <input type="radio"  name="status" onclick="myFunction(value)" value="1" checked> 1 -->
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="status" onclick="myFunction(value)" value="2"> 2  -->
+<!-- ================================ EMERGENCY =============================  -->
+
+<section class="emergencyinfo">
+  <div class="emergencyinfo-container">
+      <h1>EMERGENCY CONTACT DETAILS</h1>
+      <p>In the event of an emergency please contact the following:</p>
+    <div class="emerg-info">
+      <div class="head-3">
+        <h3> Emergency Contact #2</h3>
+      </div>
+      <div class="table">
+        <table class="oneLineTable" >
+          <tr class="name">
+            <td class="tableheader tdtitletitle"> Surname:</td>
+            <td><input type="text" placeholder="" name="surnameE1" value="" size="32" onkeyup="allContactsE1();" onselect="chooseContactsE1();"  onchange="chooseContactsE1();" list="ContactsE1">
+              <span id="contacts_displayE1">
+              <datalist id='ContactsE1'>
+              <option value="">
+              </datalist>
+              </span>
+              <span class="size10 makegrey">&nbsp;&#x2605;</span>
+            </td>
+
+
+            <td class="tableheader tdtitletitle"> First Name:</td>
+            <td><input type="text" placeholder="" name="firstnameE1"  value="" size="32"><span class="size10 makegrey">&nbsp;&#x2605;</span></td>
+          </tr>
+          <tr class="Address">
+            <td class="tableheader tdtitletitle">Address:</td>
+            <td nowrap><input type="text" placeholder="" name="homeaddressE1" value="" size="32"><span class="size10 makegrey">&nbsp;&#x2605;</span></td>
+
+            <td class="tableheader tdtitletitle">Suburb:</td>
+            <td ><input type="text"  placeholder="" name="suburbE1" value="" size="32" onkeyup="allcitiesE1();" onselect="choosecitiesE1();" onchange="choosecitiesE1();" list="citiesE1">
+               <span id="cities_displayE1">
+               <datalist id='citiesE1'>
+               <option value="">
+               </datalist>
+               </span>
+               <span class="size10 makegrey">&nbsp;&#x2605;</span>
+            </td>
+          </tr>
+          <tr class="mobile">
+            <td class="tableheader tdtitletitle">Mobile:</td>
+            <td><input type="text" name="mobileE1" placeholder="" value="" size="32"><span class="size10 makegrey">&nbsp;&#x2605;</span></td>
+            <td class="tableheader tdtitletitle">Relationship to you:</td>
+            <td nowrap>
+              <select name="relationE1" id="relationE1">
+              <option></option>
+              <!--4DLOOP therelations-->
+              <option><!--4DVAR therelations{therelations}--></option>
+              <!--4DENDLOOP-->
+              </select><span class="size10 makegrey">&nbsp;&#x2605;</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="emerg-info">
+      <div class="head-3">
+        <h3> Emergency Contact #2</h3>
+      </div>
+      <div class="table">
+        <table class="oneLineTable" >
+          <tr class="name">
+            <td class="tableheader tdtitletitle"> Surname:</td>
+            <td><input type="text" placeholder="" name="surnameE1" value="" size="32" onkeyup="allContactsE1();" onselect="chooseContactsE1();"  onchange="chooseContactsE1();" list="ContactsE1">
+              <span id="contacts_displayE1">
+              <datalist id='ContactsE1'>
+              <option value="">
+              </datalist>
+              </span>
+              <span class="size10 makegrey">&nbsp;&#x2605;</span>
+            </td>
+
+
+            <td class="tableheader tdtitletitle"> First Name:</td>
+            <td><input type="text" placeholder="" name="firstnameE1"  value="" size="32"><span class="size10 makegrey">&nbsp;&#x2605;</span></td>
+          </tr>
+          <tr class="Address">
+            <td class="tableheader tdtitletitle">Address:</td>
+            <td nowrap><input type="text" placeholder="" name="homeaddressE1" value="" size="32"><span class="size10 makegrey">&nbsp;&#x2605;</span></td>
+
+            <td class="tableheader tdtitletitle">Suburb:</td>
+            <td ><input type="text"  placeholder="" name="suburbE1" value="" size="32" onkeyup="allcitiesE1();" onselect="choosecitiesE1();" onchange="choosecitiesE1();" list="citiesE1">
+               <span id="cities_displayE1">
+               <datalist id='citiesE1'>
+               <option value="">
+               </datalist>
+               </span>
+               <span class="size10 makegrey">&nbsp;&#x2605;</span>
+            </td>
+          </tr>
+          <tr class="mobile">
+            <td class="tableheader tdtitletitle">Mobile:</td>
+            <td><input type="text" name="mobileE1" placeholder="" value="" size="32"><span class="size10 makegrey">&nbsp;&#x2605;</span></td>
+            <td class="tableheader tdtitletitle">Relationship to you:</td>
+            <td nowrap>
+              <select name="relationE1" id="relationE1">
+              <option></option>
+              <!--4DLOOP therelations-->
+              <option><!--4DVAR therelations{therelations}--></option>
+              <!--4DENDLOOP-->
+              </select><span class="size10 makegrey">&nbsp;&#x2605;</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+<!-- ================================  CONTACT =============================  -->
+</section>
+<section  class="contact">
+  <div class="contact-container">
+    <div class="head-1">
+      <h1> CONTACT DETAILS</h1>
+    </div>
+    <div class="table" class="contactinfo">
+      <table>
+        <tr class="name">
+          <td class="tableheader tdtitletitle"> Surname:</td>
+          <td><input type="text" name="surnameP1" placeholder="Your surname..." value=""  size="32"  onkeyup="allContactsP1();"  onselect="chooseContactsP1();" onchange="chooseContactsP1();" list="ContactsP1">
+            <span id="contacts_displayP1">
+            <datalist id="ContactsP1">
+            <option value="">
+            </datalist>
+            </span>
+
+            <span class="size10 makegrey">&nbsp;&#x2605;</span>
+          </td>
+
+          <td class="tableheader tdtitletitle"> First Name:</td>
+          <td><input type="text" name="firstnameP1" placeholder="Your first name..." value="" size="32"  onchange="javascript:P1NameChange();"><span class="size10 makegrey">&nbsp;&#x2605;</span></td>
+        </tr>
+        <tr class="address">
+          <td class="tableheader tdtitletitle">Address:</td>
+          <td><input type="text" placeholder="Home address..." name="homeaddressP1" value="" size="32"><span class="size10 makegrey">&nbsp;&#x2605;</span></td>
+
+          <td class="tableheader tdtitletitle">Suburb:</td>
+          <td><input type="text" placeholder="Suburb..." name="suburbP1" value="" size="32" onkeyup="allcitiesP1();" onselect="choosecitiesP1();" onchange="choosecitiesP1();" list="citiesP1">
+            <span id="cities_displayP1">
+            <datalist id='citiesP1'>
+            <option value="">
+            </datalist>
+            </span>
+            <span class="size10 makegrey">&nbsp;&#x2605;</span>
+         </td>
+        </tr>
+        <tr class="mobile-Email">
+          <td class="tableheader tdtitletitle">Mobile:</td>
+          <td><input type="text" name="mobileP1" placeholder="Your mobile..." value="" size="32"><span class="size10 makegrey">&nbsp;&#x2605;</span></td>
+
+          <td class="tableheader tdtitletitle">Email:</td>
+          <td nowrap><input type="text" name="email1P1" placeholder="Your email..." value="" size="32"><span class="size10 makegrey">&nbsp;&#x2605;</span></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
+<!-- ================================  GENERIC =============================  -->
+<section class="genericinfo">
+  <div class="genericinfo-container">
+    <div class="table" class="mediacalinfo">
+      <table border="0">
+        <tr>
+          <td class="makebold size14" colspan="6"><img src="../spacer.jpg" width="20" height="0"><b>
+            Medical Information, Disabilities, Allergies and Dietary Requirements</b></td>
+        </tr>
+        <tr>
+          <p><td><td><td><td><td><td>If your child suffers from a condition, disability, or allergy that may need special attention while in
+            <!--4DVAR [LookUps_9]Trade_Name-->'s care please provide information and care instructions.  If medication is to be administered
+            then it must be supplied by the parents/guardians with clear instructions.
+
+            <p>Does the child use an:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Inhaler/Puffer?&nbsp;&nbsp;
+              <input type="radio"  name="InhaleryesC5" id="InhaleryesC5" value="1">Yes&nbsp;&nbsp;
+              <input type="radio"  name="InhaleryesC5" id="InhalernoC5" value="2">No
+              <img src="../spacer.jpg" width="50" height="0">EpiPen/Auto-Injector?&nbsp;
+              <input type="radio"  name="EpiPenyesC5" id="EpiPenyesC5" value="1">Yes&nbsp;
+              <input type="radio"  name="EpiPenyesC5" id="EpiPennoC5" value="2">No
+            </p>
+
+
+            <p>Does the child have an ASCIA Action Plan for Allergic Reactions (Anaphylaxis)?&nbsp;&nbsp;
+              <input type="radio"  name="ActionPlanyesC5" id="ActionPlanyesC5" value="1">Yes&nbsp;&nbsp;   <!--  onclick="javascript:asciac5yes();"  -->
+              <input type="radio"  name="ActionPlanyesC5" id="ActionPlannoC5" value="2">No   <!--  onclick="javascript:asciac5no();"  -->
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(If "Yes", please attach.)&nbsp;&nbsp;
+              <span id="asciac5"><input type="file" id="file1c5"></span>
+            </p>
+
+            <p>Are there any special requirements, access or guardian issues you need to inform of us?&nbsp;&nbsp;
+              <input type="radio"  name="SpecialReqyesC5" id="SpecialReqyesC5" value="1">Yes&nbsp;&nbsp;   <!--  onclick="javascript:requc5yes();"  -->
+              <input type="radio"  name="SpecialReqyesC5" id="SpecialReqnoC5" value="2">No   <!--  onclick="javascript:requc5no();"  -->
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(If "Yes", please attach.)&nbsp;&nbsp;
+              <span id="requc5"><input type="file" id="file2c5"></span>
+            </p>
+
+            <p>Please note any special conditions, dietary requirements or care instructions:</p>
+            <textarea name="commentsC5" class="arial size13" rows="3" cols="160"></textarea>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="table" class="otherinfo">
+      <table border="0">
+        <tr>
+          <td class="makebold size14" colspan="6"><img src="../spacer.jpg" width="20" height="0"><b>Other Information</b></td>
+        </tr>
+        <tr>
+          <p><td><td><td><td><td><td>Please provide other infirmation you consider important about your child(ren) which will
+            help <!--4DVAR [LookUps_9]Trade_Name--> provide better care for them while they attend <!--4DVAR [LookUps_9]Trade_Name--> programs:</p>
+            <textarea name="otherComC5" class="arial size13" rows="3" cols="160"></textarea>
+      </table>
+    </div>
+
+    <div class="table" class="mediainfo">
+      <table border="0">
+        <tr>
+          <td class="makebold size14" colspan="6"><img src="../spacer.jpg" width="20" height="0"><b>Media Information</b></td>
+        </tr>
+        <tr>
+          <p><td><td><td><td><td><td>Will you give permission to use any photos/digital media taken by us
+          (which may identify your child/ward) to be used for publicity within<b> <!--4DVAR [LookUps_9]Trade_Name--></b> eg. noticeboards, photo presentations?
+          <img src="../spacer.jpg" width="8" height="0">
+          <input type="radio" name="mediaIntyesC5" id="mediaIntyesC5" value="1">Yes&nbsp;&nbsp;
+          <input type="radio" name="mediaIntyesC5" id="mediaIntnoC5" value="2">No<p><td>
+        </tr>
+
+        <tr>
+          <p><td><td><td><td><td>
+            <td>Will you give permission to use any photos/digital media taken by us
+              (which may identify your child/ward) to be used for publicity in a broader capacity such as flyers
+              and the <!--4DVAR [LookUps_9]Trade_Name-->'s website?
+              <img src="../spacer.jpg" width="8" height="0">
+              <input type="radio" name="mediaExtyesC5" id="mediaExtyesC5" value="1">Yes&nbsp;&nbsp;
+              <input type="radio" name="mediaExtyesC5" id="mediaExtnoC5" value="2">No
+              <p>
+                <td>
+        </tr>
+
+      </table>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================================  CONSENT =============================  -->
+<section class="consent">
+  <div class="consent-container">
+      <h1>CONSENT</h1>
+    <div class="table">
+      <table>
+        <tr>
+          <td class="tableheader tdtitletitle">Full Name:<input class="consent-input" type="text" size="210">
+            <p> Understand that in the event of an emergency,it is Church`s intention to make very effort to contacted
+            the people listed as the emergency contacts.However, if contack con not be made,I give permission to receive
+          ambulance,medical,surgical or anaesthetic care as required,and I accept full responsibility for all expenses incurred</p>
+          <div class="signed-date">
+            <div class="signed-consent">
+              <span>Signed:</span><input class="consent-input" type="text" size="40">
+            </div>
+
+            <div class="date-consent">
+                <span>Date:</span><input class="consent-input" type="text" size="40">
+            </div>
+          </div>
+
+
+        </td>
+        <tr>
+      </table>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<br><br>
+
+<hr>
+
+<table width="100%" border="0">
+<tr>
+<td class="makeitalic makebold size12 valingmiddle aligncenter">Thank you for taking the time<br>to complete this form.</td>
+
+<td><img src="../spacer.jpg" width="30" height="0"></td>
+
+<td class="aligncenter">
+<input type="button" name="save" class="button2" value="Save and Submit Form" onclick="javascript:save_Form();">
+<img src="../spacer.jpg" width="30" height="0"></td>
+<td class="alignleft">
+<!--4DVAR [Form_Types_87]Form_PIc1_87-->
+</td>
+<td><img src="../spacer.jpg" width="10" height="0"></td>
+</tr>
+</table>
+
+<hr>
+</form>
+
+
+</body>
+</html>

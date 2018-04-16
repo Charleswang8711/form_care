@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d26ebbde-1a5a-4be7-9773-10148d75aa46" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="information _craft.shtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/craft/information _craft.shtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="467" column="30" lean-forward="false" selection-start-line="467" selection-start-column="30" selection-end-line="467" selection-end-column="30" />
+              <folding>
+                <element signature="e#76390#76396#0" expanded="true" />
+                <element signature="e#76396#76402#0" expanded="true" />
+                <element signature="e#76402#76408#0" expanded="true" />
+                <element signature="e#76686#76692#0" expanded="true" />
+                <element signature="e#79376#79382#0" expanded="true" />
+                <element signature="e#79382#79388#0" expanded="true" />
+                <element signature="e#79388#79394#0" expanded="true" />
+                <element signature="e#79672#79678#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/my test/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="information _craft_v1.shtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/craft/information _craft_v1.shtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45570">
+              <caret line="1775" column="43" lean-forward="false" selection-start-line="1775" selection-start-column="33" selection-end-line="1775" selection-end-column="43" />
+              <folding>
+                <element signature="e#11879#12022#0" expanded="false" />
+                <element signature="e#12087#12515#0" expanded="false" />
+                <element signature="e#12580#12970#0" expanded="false" />
+                <element signature="e#13369#13512#0" expanded="false" />
+                <element signature="e#13596#14098#0" expanded="false" />
+                <element signature="e#14181#14683#0" expanded="false" />
+                <element signature="e#14766#15268#0" expanded="false" />
+                <element signature="e#15350#15852#0" expanded="false" />
+                <element signature="e#15890#15964#0" expanded="false" />
+                <element signature="e#16030#16087#0" expanded="false" />
+                <element signature="e#16196#16262#0" expanded="false" />
+                <element signature="e#16369#16441#0" expanded="false" />
+                <element signature="e#16556#16632#0" expanded="false" />
+                <element signature="e#16747#16809#0" expanded="false" />
+                <element signature="e#16920#16987#0" expanded="false" />
+                <element signature="e#17098#17166#0" expanded="false" />
+                <element signature="e#17287#17314#0" expanded="false" />
+                <element signature="e#17336#17363#0" expanded="false" />
+                <element signature="e#17383#17410#0" expanded="false" />
+                <element signature="e#17536#18848#0" expanded="false" />
+                <element signature="e#18973#20283#0" expanded="false" />
+                <element signature="e#20410#21720#0" expanded="false" />
+                <element signature="e#21846#23156#0" expanded="false" />
+                <element signature="e#24115#24162#0" expanded="false" />
+                <element signature="e#24168#24214#0" expanded="false" />
+                <element signature="e#24268#24314#0" expanded="false" />
+                <element signature="e#24423#24468#0" expanded="false" />
+                <element signature="e#24896#24944#0" expanded="false" />
+                <element signature="e#24950#24997#0" expanded="false" />
+                <element signature="e#25067#25114#0" expanded="false" />
+                <element signature="e#25120#25166#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles_craft.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles_craft.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1200">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>contacts_displayE1</find>
+      <find>2190</find>
+      <find>save_form</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/original/information.shtml" />
+        <option value="$PROJECT_DIR$/craft/information _craft_v2.shtml" />
+        <option value="$PROJECT_DIR$/craft/information _craft.shtml" />
+        <option value="$PROJECT_DIR$/my test/test.js" />
+        <option value="$PROJECT_DIR$/styles_craft.css" />
+        <option value="$PROJECT_DIR$/craft/information _craft_v1.shtml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="120" />
+    <option name="y" value="12" />
+    <option name="width" value="1604" />
+    <option name="height" value="990" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Morly Community Care" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Morly Community Care" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Morly Community Care" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Morly Community Care" type="462c0819:PsiDirectoryNode" />
+              <item name="craft" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Morly Community Care" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Morly Community Care" type="462c0819:PsiDirectoryNode" />
+              <item name="my test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Morly Community Care" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Morly Community Care" type="462c0819:PsiDirectoryNode" />
+              <item name="original" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/craft/information _craft_v2.shtml" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.test.js">
+    <configuration name="information _craft.shtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Morly Community Care/craft/information _craft.shtml" />
+    <configuration name="information _craft_v1.shtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/Morly Community Care/craft/information _craft_v1.shtml" />
+    <configuration name="information _craft_v2.shtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/Morly Community Care/craft/information _craft_v2.shtml" />
+    <configuration name="information.shtml" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Morly Community Care/original/information.shtml" />
+    <configuration name="javascript" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/my test" />
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.javascript" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.information _craft_v1.shtml" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.information _craft_v2.shtml" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.information.shtml" />
+      <item index="5" class="java.lang.String" itemvalue="JavaScript Debug.information _craft.shtml" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.test.js" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.information _craft.shtml" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.information _craft_v2.shtml" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.information.shtml" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.information _craft_v1.shtml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d26ebbde-1a5a-4be7-9773-10148d75aa46" name="Default" comment="" />
+      <created>1521993724822</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1521993724822</updated>
+      <workItem from="1521993727502" duration="668000" />
+      <workItem from="1522024850797" duration="1706000" />
+      <workItem from="1522026582231" duration="10717000" />
+      <workItem from="1522113935522" duration="6240000" />
+      <workItem from="1522120286690" duration="2392000" />
+      <workItem from="1522224335270" duration="2484000" />
+      <workItem from="1522288067418" duration="1924000" />
+      <workItem from="1522719619838" duration="2432000" />
+      <workItem from="1522924155764" duration="1967000" />
+      <workItem from="1523244408431" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="30556000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14791666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1446613" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21140939" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14541388" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21140939" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/craft/information _craft.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14010">
+          <caret line="467" column="30" lean-forward="false" selection-start-line="467" selection-start-column="30" selection-end-line="467" selection-end-column="30" />
+          <folding>
+            <element signature="e#76390#76396#0" expanded="true" />
+            <element signature="e#76396#76402#0" expanded="true" />
+            <element signature="e#76402#76408#0" expanded="true" />
+            <element signature="e#76686#76692#0" expanded="true" />
+            <element signature="e#79376#79382#0" expanded="true" />
+            <element signature="e#79382#79388#0" expanded="true" />
+            <element signature="e#79388#79394#0" expanded="true" />
+            <element signature="e#79672#79678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my test/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles_craft.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft_v1.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53250">
+          <caret line="1775" column="43" lean-forward="false" selection-start-line="1775" selection-start-column="33" selection-end-line="1775" selection-end-column="43" />
+          <folding>
+            <element signature="e#11879#12022#0" expanded="false" />
+            <element signature="e#12087#12515#0" expanded="false" />
+            <element signature="e#12580#12970#0" expanded="false" />
+            <element signature="e#13369#13512#0" expanded="false" />
+            <element signature="e#13596#14098#0" expanded="false" />
+            <element signature="e#14181#14683#0" expanded="false" />
+            <element signature="e#14766#15268#0" expanded="false" />
+            <element signature="e#15350#15852#0" expanded="false" />
+            <element signature="e#15890#15964#0" expanded="false" />
+            <element signature="e#16030#16087#0" expanded="false" />
+            <element signature="e#16196#16262#0" expanded="false" />
+            <element signature="e#16369#16441#0" expanded="false" />
+            <element signature="e#16556#16632#0" expanded="false" />
+            <element signature="e#16747#16809#0" expanded="false" />
+            <element signature="e#16920#16987#0" expanded="false" />
+            <element signature="e#17098#17166#0" expanded="false" />
+            <element signature="e#17287#17314#0" expanded="false" />
+            <element signature="e#17336#17363#0" expanded="false" />
+            <element signature="e#17383#17410#0" expanded="false" />
+            <element signature="e#17536#18848#0" expanded="false" />
+            <element signature="e#18973#20283#0" expanded="false" />
+            <element signature="e#20410#21720#0" expanded="false" />
+            <element signature="e#21846#23156#0" expanded="false" />
+            <element signature="e#24115#24162#0" expanded="false" />
+            <element signature="e#24168#24214#0" expanded="false" />
+            <element signature="e#24268#24314#0" expanded="false" />
+            <element signature="e#24423#24468#0" expanded="false" />
+            <element signature="e#24896#24944#0" expanded="false" />
+            <element signature="e#24950#24997#0" expanded="false" />
+            <element signature="e#25067#25114#0" expanded="false" />
+            <element signature="e#25120#25166#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14010">
+          <caret line="467" column="30" lean-forward="false" selection-start-line="467" selection-start-column="30" selection-end-line="467" selection-end-column="30" />
+          <folding>
+            <element signature="e#76390#76396#0" expanded="true" />
+            <element signature="e#76396#76402#0" expanded="true" />
+            <element signature="e#76402#76408#0" expanded="true" />
+            <element signature="e#76686#76692#0" expanded="true" />
+            <element signature="e#79376#79382#0" expanded="true" />
+            <element signature="e#79382#79388#0" expanded="true" />
+            <element signature="e#79388#79394#0" expanded="true" />
+            <element signature="e#79672#79678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my test/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles_craft.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft_v1.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13950">
+          <caret line="465" column="50" lean-forward="true" selection-start-line="465" selection-start-column="50" selection-end-line="465" selection-end-column="50" />
+          <folding>
+            <element signature="e#11879#12022#0" expanded="false" />
+            <element signature="e#12087#12515#0" expanded="false" />
+            <element signature="e#12580#12970#0" expanded="false" />
+            <element signature="e#13369#13512#0" expanded="false" />
+            <element signature="e#13596#14098#0" expanded="false" />
+            <element signature="e#14181#14683#0" expanded="false" />
+            <element signature="e#14766#15268#0" expanded="false" />
+            <element signature="e#15350#15852#0" expanded="false" />
+            <element signature="e#15890#15964#0" expanded="false" />
+            <element signature="e#16030#16087#0" expanded="false" />
+            <element signature="e#16196#16262#0" expanded="false" />
+            <element signature="e#16369#16441#0" expanded="false" />
+            <element signature="e#16556#16632#0" expanded="false" />
+            <element signature="e#16747#16809#0" expanded="false" />
+            <element signature="e#16920#16987#0" expanded="false" />
+            <element signature="e#17098#17166#0" expanded="false" />
+            <element signature="e#17287#17314#0" expanded="false" />
+            <element signature="e#17336#17363#0" expanded="false" />
+            <element signature="e#17383#17410#0" expanded="false" />
+            <element signature="e#17536#18848#0" expanded="false" />
+            <element signature="e#18973#20283#0" expanded="false" />
+            <element signature="e#20410#21720#0" expanded="false" />
+            <element signature="e#21846#23156#0" expanded="false" />
+            <element signature="e#24115#24162#0" expanded="false" />
+            <element signature="e#24168#24214#0" expanded="false" />
+            <element signature="e#24268#24314#0" expanded="false" />
+            <element signature="e#24423#24468#0" expanded="false" />
+            <element signature="e#24896#24944#0" expanded="false" />
+            <element signature="e#24950#24997#0" expanded="false" />
+            <element signature="e#25067#25114#0" expanded="false" />
+            <element signature="e#25120#25166#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14010">
+          <caret line="467" column="30" lean-forward="false" selection-start-line="467" selection-start-column="30" selection-end-line="467" selection-end-column="30" />
+          <folding>
+            <element signature="e#76390#76396#0" expanded="true" />
+            <element signature="e#76396#76402#0" expanded="true" />
+            <element signature="e#76402#76408#0" expanded="true" />
+            <element signature="e#76686#76692#0" expanded="true" />
+            <element signature="e#79376#79382#0" expanded="true" />
+            <element signature="e#79382#79388#0" expanded="true" />
+            <element signature="e#79388#79394#0" expanded="true" />
+            <element signature="e#79672#79678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my test/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles_craft.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft_v1.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25380">
+          <caret line="846" column="1" lean-forward="true" selection-start-line="846" selection-start-column="1" selection-end-line="846" selection-end-column="1" />
+          <folding>
+            <element signature="e#11879#12022#0" expanded="false" />
+            <element signature="e#12087#12515#0" expanded="false" />
+            <element signature="e#12580#12970#0" expanded="false" />
+            <element signature="e#13369#13512#0" expanded="false" />
+            <element signature="e#13596#14098#0" expanded="false" />
+            <element signature="e#14181#14683#0" expanded="false" />
+            <element signature="e#14766#15268#0" expanded="false" />
+            <element signature="e#15350#15852#0" expanded="false" />
+            <element signature="e#15890#15964#0" expanded="false" />
+            <element signature="e#16030#16087#0" expanded="false" />
+            <element signature="e#16196#16262#0" expanded="false" />
+            <element signature="e#16369#16441#0" expanded="false" />
+            <element signature="e#16556#16632#0" expanded="false" />
+            <element signature="e#16747#16809#0" expanded="false" />
+            <element signature="e#16920#16987#0" expanded="false" />
+            <element signature="e#17098#17166#0" expanded="false" />
+            <element signature="e#17287#17314#0" expanded="false" />
+            <element signature="e#17336#17363#0" expanded="false" />
+            <element signature="e#17383#17410#0" expanded="false" />
+            <element signature="e#17536#18848#0" expanded="false" />
+            <element signature="e#18973#20283#0" expanded="false" />
+            <element signature="e#20410#21720#0" expanded="false" />
+            <element signature="e#21846#23156#0" expanded="false" />
+            <element signature="e#24115#24162#0" expanded="false" />
+            <element signature="e#24168#24214#0" expanded="false" />
+            <element signature="e#24268#24314#0" expanded="false" />
+            <element signature="e#24423#24468#0" expanded="false" />
+            <element signature="e#24896#24944#0" expanded="false" />
+            <element signature="e#24950#24997#0" expanded="false" />
+            <element signature="e#25067#25114#0" expanded="false" />
+            <element signature="e#25120#25166#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#76390#76396#0" expanded="true" />
+            <element signature="e#76396#76402#0" expanded="true" />
+            <element signature="e#76402#76408#0" expanded="true" />
+            <element signature="e#76686#76692#0" expanded="true" />
+            <element signature="e#79376#79382#0" expanded="true" />
+            <element signature="e#79382#79388#0" expanded="true" />
+            <element signature="e#79388#79394#0" expanded="true" />
+            <element signature="e#79672#79678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my test/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft_v1.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67590">
+          <caret line="2253" column="26" lean-forward="false" selection-start-line="2253" selection-start-column="26" selection-end-line="2253" selection-end-column="26" />
+          <folding>
+            <element signature="e#11879#12022#0" expanded="false" />
+            <element signature="e#12087#12515#0" expanded="false" />
+            <element signature="e#12580#12970#0" expanded="false" />
+            <element signature="e#13369#13512#0" expanded="false" />
+            <element signature="e#13596#14098#0" expanded="false" />
+            <element signature="e#14181#14683#0" expanded="false" />
+            <element signature="e#14766#15268#0" expanded="false" />
+            <element signature="e#15350#15852#0" expanded="false" />
+            <element signature="e#15890#15964#0" expanded="false" />
+            <element signature="e#16030#16087#0" expanded="false" />
+            <element signature="e#16196#16262#0" expanded="false" />
+            <element signature="e#16369#16441#0" expanded="false" />
+            <element signature="e#16556#16632#0" expanded="false" />
+            <element signature="e#16747#16809#0" expanded="false" />
+            <element signature="e#16920#16987#0" expanded="false" />
+            <element signature="e#17098#17166#0" expanded="false" />
+            <element signature="e#17287#17314#0" expanded="false" />
+            <element signature="e#17336#17363#0" expanded="false" />
+            <element signature="e#17383#17410#0" expanded="false" />
+            <element signature="e#17536#18848#0" expanded="false" />
+            <element signature="e#18973#20283#0" expanded="false" />
+            <element signature="e#20410#21720#0" expanded="false" />
+            <element signature="e#21846#23156#0" expanded="false" />
+            <element signature="e#24115#24162#0" expanded="false" />
+            <element signature="e#24168#24214#0" expanded="false" />
+            <element signature="e#24268#24314#0" expanded="false" />
+            <element signature="e#24423#24468#0" expanded="false" />
+            <element signature="e#24896#24944#0" expanded="false" />
+            <element signature="e#24950#24997#0" expanded="false" />
+            <element signature="e#25067#25114#0" expanded="false" />
+            <element signature="e#25120#25166#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles_craft.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#76390#76396#0" expanded="true" />
+            <element signature="e#76396#76402#0" expanded="true" />
+            <element signature="e#76402#76408#0" expanded="true" />
+            <element signature="e#76686#76692#0" expanded="true" />
+            <element signature="e#79376#79382#0" expanded="true" />
+            <element signature="e#79382#79388#0" expanded="true" />
+            <element signature="e#79388#79394#0" expanded="true" />
+            <element signature="e#79672#79678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft_v2.shtml" />
+    <entry file="file://$PROJECT_DIR$/original/information.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67140">
+          <caret line="2238" column="0" lean-forward="false" selection-start-line="2238" selection-start-column="0" selection-end-line="2238" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my test/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my test/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my test/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft_v1.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52890">
+          <caret line="1763" column="35" lean-forward="true" selection-start-line="1763" selection-start-column="35" selection-end-line="1763" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft_v1.html" />
+    <entry file="file://$PROJECT_DIR$/craft/information.shtml" />
+    <entry file="file://$PROJECT_DIR$/my test/hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles_new.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="83" column="1" lean-forward="false" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="3845" column="4" lean-forward="false" selection-start-line="3845" selection-start-column="4" selection-end-line="3845" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft_v2.shtml" />
+    <entry file="file://$PROJECT_DIR$/original/information.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="2238" column="0" lean-forward="false" selection-start-line="2238" selection-start-column="0" selection-end-line="2238" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles_craft.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft_v1.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45570">
+          <caret line="1775" column="43" lean-forward="false" selection-start-line="1775" selection-start-column="33" selection-end-line="1775" selection-end-column="43" />
+          <folding>
+            <element signature="e#11879#12022#0" expanded="false" />
+            <element signature="e#12087#12515#0" expanded="false" />
+            <element signature="e#12580#12970#0" expanded="false" />
+            <element signature="e#13369#13512#0" expanded="false" />
+            <element signature="e#13596#14098#0" expanded="false" />
+            <element signature="e#14181#14683#0" expanded="false" />
+            <element signature="e#14766#15268#0" expanded="false" />
+            <element signature="e#15350#15852#0" expanded="false" />
+            <element signature="e#15890#15964#0" expanded="false" />
+            <element signature="e#16030#16087#0" expanded="false" />
+            <element signature="e#16196#16262#0" expanded="false" />
+            <element signature="e#16369#16441#0" expanded="false" />
+            <element signature="e#16556#16632#0" expanded="false" />
+            <element signature="e#16747#16809#0" expanded="false" />
+            <element signature="e#16920#16987#0" expanded="false" />
+            <element signature="e#17098#17166#0" expanded="false" />
+            <element signature="e#17287#17314#0" expanded="false" />
+            <element signature="e#17336#17363#0" expanded="false" />
+            <element signature="e#17383#17410#0" expanded="false" />
+            <element signature="e#17536#18848#0" expanded="false" />
+            <element signature="e#18973#20283#0" expanded="false" />
+            <element signature="e#20410#21720#0" expanded="false" />
+            <element signature="e#21846#23156#0" expanded="false" />
+            <element signature="e#24115#24162#0" expanded="false" />
+            <element signature="e#24168#24214#0" expanded="false" />
+            <element signature="e#24268#24314#0" expanded="false" />
+            <element signature="e#24423#24468#0" expanded="false" />
+            <element signature="e#24896#24944#0" expanded="false" />
+            <element signature="e#24950#24997#0" expanded="false" />
+            <element signature="e#25067#25114#0" expanded="false" />
+            <element signature="e#25120#25166#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/craft/information _craft.shtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="467" column="30" lean-forward="false" selection-start-line="467" selection-start-column="30" selection-end-line="467" selection-end-column="30" />
+          <folding>
+            <element signature="e#76390#76396#0" expanded="true" />
+            <element signature="e#76396#76402#0" expanded="true" />
+            <element signature="e#76402#76408#0" expanded="true" />
+            <element signature="e#76686#76692#0" expanded="true" />
+            <element signature="e#79376#79382#0" expanded="true" />
+            <element signature="e#79382#79388#0" expanded="true" />
+            <element signature="e#79388#79394#0" expanded="true" />
+            <element signature="e#79672#79678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my test/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,43 @@
+div, section{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+.emergencyinfo-container{
+  margin: 10px 0;
+}
+h1{
+    text-align: center;
+    color: #ddf;
+}
+.emerg-info{
+  margin: 0 10px 0 0;
+  display: inline-block;
+}
+.contact-container{
+  margin: 10px 0;
+
+}
+.genericinfo-container{
+  margin: 10px 0;
+}
+.consent-input{
+  outline: 0;
+  border-width: 0 0 1px 0;
+  border-color: black;
+}
+
+.date-consent{
+  text-align: right;
+  width: 47%;
+  display: inline-block;
+  margin: 0 0 0 35px;
+}
+.signed-consent{
+  width: 47%;
+  display: inline-block;
+}
+
+
+
+

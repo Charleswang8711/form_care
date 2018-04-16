@@ -1,0 +1,350 @@
+
+
+/*  The following handles alternating background row colours
+	Refer to  http://www.textfixer.com/tutorials/css-table-alternating-rows.php	
+		Provide some minimal visual accomodation for IE8 and below */
+			.TFtable tr {
+			background: #e6e6fa; }
+	/*  Define the background color for all the ODD background rows  */
+			.TFtable tr:nth-child(even) { 
+			background: #e6e6fa; }
+	/*  Define the background color for all the EVEN background rows  */
+			.TFtable tr:nth-child(odd) {
+			background: #ffffe0; }
+
+
+
+
+
+
+//body {
+	//background-color: white;
+	//color: black;
+	//font-family: Arial, sans serif;
+	//font-size: 12px;
+	//}
+	
+	
+	
+td {
+	color: black;
+	font-family: Arial, sans serif;
+	font-size: 11px;
+	vertical-align: center;
+	}
+	
+	
+	
+a {
+	color: black;
+	font-family: Arial, sans serif;
+	text-decoration: underline;
+	}
+	
+	
+	
+img {
+	border: 0;
+	verticle-align: center;
+	}
+	
+	
+.Screen_Number
+{
+font-size: 11px;
+font-weight: normal;
+color: darkblue;
+}
+
+
+.Go_To
+{
+text-align: center;
+vertical-align: center;
+font-size: 10px;
+font-weight: normal;
+color: darkblue;
+}
+
+	
+big {
+	color: black;
+	font: Arial;
+	font-weight: bold;
+	font-size: 14px;
+	}
+	
+	
+	
+small {
+	color: black;
+	font-size: 11px;
+	font-family: Arial, sans serif;
+	}
+	
+	
+	
+input {
+	color: black;
+	font-size: 11px;
+	font-family: Arial, sans serif;
+	vertical-align: center;
+	}
+	
+	
+	
+textarea {
+	color: black;
+	font-size: 11px;
+	font-family: Arial, sans serif;
+	}
+	
+	
+	
+ select {
+ 	font-family: Arial, sans serif;
+ 	font-size: 11px;
+ 	color: black;
+	}
+	
+	
+ .FieldCellWidth  {
+	width: 130px;
+	vertical-align: top;
+	text-align: right;
+	height: 16;
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	font-family: Arial, sans serif;
+}
+	
+	
+	
+	
+.topheader {
+	vertical-align: top;
+	text-align: right;
+	height: 16;
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	font-family: Arial, sans serif;
+	}
+	
+	
+	
+.tiny {
+	font-size: 12px;
+	}
+	
+	
+	
+.tableheader {
+	vertical-align: center;
+	text-align: right;
+	height: 25;
+	font-weight: bold;
+	font-size: 11px;
+	color: black;
+	font-family: Arial, sans serif;
+	}
+	
+	
+	
+.tablerequired {
+	vertical-align: center;
+	text-align: right;
+	height: 30;
+	font-weight: bold;
+	font-size: 11px;
+	color: darkblue;
+	font-family: Arial, sans serif;
+	}
+	
+	
+	
+.tablerequiredtop {
+	vertical-align: top;
+	text-align: right;
+	height: 16;
+	font-weight: bold;
+	font-size: 11px;
+	color: darkblue;
+	font-family: Arial, sans serif;
+	}
+
+	
+	
+.tabletop {
+	verticle-align: top;
+	text-align: center;
+	height: 17;
+	color: black;
+	}
+	
+	
+.tabletopR {
+	verticle-align: top;
+	text-align: right;
+	height: 17;
+	color: black;
+	}
+
+.tabletopL {
+	verticle-align: top;
+	text-align: left;
+	height: 17;
+	color: black;
+	}
+
+
+.tablebottom {
+	verticle-align: bottom;
+	text-align: center;
+	height: 17;
+	color: black;
+	}
+	
+	
+	
+.tablebottomR {
+	verticle-align: bottom;
+	text-align: right;
+	height: 17;
+	color: black;
+	}
+	
+	
+	
+.underline {
+	text-decoration: underline;
+	}
+
+
+.centerlink {
+	color: black;
+	font-family: Arial, sans serif;
+	text-decoration: underline;
+	}
+
+
+
+underline:active {color: red; text-decoration: underline}
+underline:visited {text-decoration: underline}
+underline:hover {text-decoration: underline}
+
+
+
+a:active {color: red; text-decoration: none}
+// a:visited {text-decoration: none}
+a:hover {text-decoration: underline}
+
+
+
+
+
+
+	.bluelink
+	{
+		text-decoration: underline;
+		color: #000099;
+	}
+	.TESTcpYearNavigation,
+	.TESTcpMonthNavigation
+			{
+			background-color:#6677DD;
+			text-align:center;
+			vertical-align:center;
+			text-decoration:none;
+			color:#FFFFFF;
+			font-weight:bold;
+			}
+	.TESTcpDayColumnHeader,
+	.TESTcpYearNavigation,
+	.TESTcpMonthNavigation,
+	.TESTcpCurrentMonthDate,
+	.TESTcpCurrentMonthDateDisabled,
+	.TESTcpOtherMonthDate,
+	.TESTcpOtherMonthDateDisabled,
+	.TESTcpCurrentDate,
+	.TESTcpCurrentDateDisabled,
+	.TESTcpTodayText,
+	.TESTcpTodayTextDisabled,
+	.TESTcpText
+			{
+			font-family:arial;
+			font-size:10pt;
+			}
+	TD.TESTcpDayColumnHeader
+			{
+			text-align:right;
+			border:solid thin #6677DD;
+			border-width:0 0 1 0;
+			}
+	.TESTcpCurrentMonthDate,
+	.TESTcpOtherMonthDate,
+	.TESTcpCurrentDate
+			{
+			text-align:right;
+			text-decoration:none;
+			}
+	.TESTcpCurrentMonthDateDisabled,
+	.TESTcpOtherMonthDateDisabled,
+	.TESTcpCurrentDateDisabled
+			{
+			color:#D0D0D0;
+			text-align:right;
+			text-decoration:line-through;
+			}
+	.TESTcpCurrentMonthDate
+			{
+			color:#6677DD;
+			font-weight:bold;
+			}
+	.TESTcpCurrentDate
+			{
+			color: #FFFFFF;
+			font-weight:bold;
+			}
+	.TESTcpOtherMonthDate
+			{
+			color:#808080;
+			}
+	TD.TESTcpCurrentDate
+			{
+			color:#FFFFFF;
+			background-color: #6677DD;
+			border-width:1;
+			border:solid thin #000000;
+			}
+	TD.TESTcpCurrentDateDisabled
+			{
+			border-width:1;
+			border:solid thin #FFAAAA;
+			}
+	TD.TESTcpTodayText,
+	TD.TESTcpTodayTextDisabled
+			{
+			border:solid thin #6677DD;
+			border-width:1 0 0 0;
+			}
+	A.TESTcpTodayText,
+	SPAN.TESTcpTodayTextDisabled
+			{
+			height:20px;
+			}
+	A.TESTcpTodayText
+			{
+			color:#6677DD;
+			font-weight:bold;
+			}
+	SPAN.TESTcpTodayTextDisabled
+			{
+			color:#D0D0D0;
+			}
+	.TESTcpBorder
+			{
+			border:solid thin #6677DD;
+			}
+
